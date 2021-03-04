@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="281c52c4-9b56-49e2-8578-6e2f950ac8f6" name="Default Changelist" comment="" />
+    <list default="true" id="281c52c4-9b56-49e2-8578-6e2f950ac8f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Machine_Learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Machine_Learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/.idea/Reinforcement_Learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/.idea/Reinforcement_Learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/1-policy-iteration/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/1-policy-iteration/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/1-policy-iteration/policy_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/1-policy-iteration/policy_iteration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/2-value-iteration/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/2-value-iteration/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/2-value-iteration/value_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/2-value-iteration/value_iteration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/3-monte-carlo/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/3-monte-carlo/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/3-monte-carlo/mc_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/3-monte-carlo/mc_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa/.python-version" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa/.python-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa/sarsa_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa/sarsa_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/.python-version" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/.python-version" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/q_learning_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/deep_sarsa_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/deep_sarsa_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/save_graph/deep_sarsa_.png" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/save_graph/deep_sarsa_.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/save_model/deep_sarsa.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/save_model/deep_sarsa.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce/environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce/reinforce_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce/reinforce_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn/cartpole_dqn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn/cartpole_dqn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn/save_graph/cartpole_dqn.png" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn/save_graph/cartpole_dqn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/cartpole_a2c.py" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/cartpole_a2c.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/save_graph/cartpole_a2c.png" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/save_graph/cartpole_a2c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/save_model/cartpole_actor.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/save_model/cartpole_actor.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/save_model/cartpole_critic.h5" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic/save_model/cartpole_critic.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,11 +66,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Simulator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.run_pid_controller">
-    <configuration name="cartpole_dqn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.breakout_dqn">
+    <configuration name="ale_python_interface" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Machine_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -39,12 +78,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/anaconda3/envs/3.6ML/Lib/site-packages/atari_py" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn/cartpole_dqn.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/anaconda3/envs/3.6ML/Lib/site-packages/atari_py/ale_python_interface.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -53,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="deep_sarsa_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="breakout_a3c" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Machine_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,12 +100,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa/deep_sarsa_agent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout/breakout_a3c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -75,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="reinforce_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="breakout_dqn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Machine_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,12 +122,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce/reinforce_agent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout/breakout_dqn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +136,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_pid_controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="play_a3c_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Machine_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,12 +144,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Simulator/examples" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Simulator/examples/run_pid_controller.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout/play_a3c_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,28 +158,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_pid_controller.TestPIDController.test_pid_controller" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="q_learning_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Machine_Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/simglucose/tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_pid_controller.TestPIDController.test_pid_controller&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning/q_learning_agent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_pid_controller" />
-        <item itemvalue="Python.deep_sarsa_agent" />
-        <item itemvalue="Python.reinforce_agent" />
-        <item itemvalue="Python.cartpole_dqn" />
-        <item itemvalue="Python tests.Unittests for test_pid_controller.TestPIDController.test_pid_controller" />
+        <item itemvalue="Python.breakout_dqn" />
+        <item itemvalue="Python.ale_python_interface" />
+        <item itemvalue="Python.breakout_a3c" />
+        <item itemvalue="Python.play_a3c_model" />
+        <item itemvalue="Python.q_learning_agent" />
       </list>
     </recent_temporary>
   </component>
@@ -171,26 +217,45 @@
       <workItem from="1613568647362" duration="9000" />
       <workItem from="1613568664053" duration="2288000" />
       <workItem from="1613642517596" duration="1929000" />
+      <workItem from="1613905333378" duration="1379000" />
+      <workItem from="1613968870700" duration="4000000" />
+      <workItem from="1614166339226" duration="2536000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Machine_Learning$run_user_interface.coverage" NAME="run_user_interface Coverage Results" MODIFIED="1612093150846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/examples" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$play_a3c_model.coverage" NAME="play_a3c_model Coverage Results" MODIFIED="1614166381666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout" />
     <SUITE FILE_PATH="coverage/Machine_Learning$advanced_tutorial.coverage" NAME="advanced_tutorial Coverage Results" MODIFIED="1611907211222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/examples" />
     <SUITE FILE_PATH="coverage/Machine_Learning$deep_sarsa_agent.coverage" NAME="deep_sarsa_agent Coverage Results" MODIFIED="1612144899205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/6-deep-sarsa" />
     <SUITE FILE_PATH="coverage/Machine_Learning$policy_iteration.coverage" NAME="policy_iteration Coverage Results" MODIFIED="1612509452508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/1-policy-iteration" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$ale_python_interface.coverage" NAME="ale_python_interface Coverage Results" MODIFIED="1614168215723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda3/envs/3.6ML/Lib/site-packages/atari_py" />
     <SUITE FILE_PATH="coverage/Machine_Learning$pid_ctrller.coverage" NAME="pid_ctrller Coverage Results" MODIFIED="1612787069076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/simglucose/controller" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$breakout_a3c.coverage" NAME="breakout_a3c Coverage Results" MODIFIED="1614167132863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout" />
     <SUITE FILE_PATH="coverage/Machine_Learning$cartpole_a2c.coverage" NAME="cartpole_a2c Coverage Results" MODIFIED="1612151103730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/2-actor-critic" />
-    <SUITE FILE_PATH="coverage/Machine_Learning$run_pid_controller.coverage" NAME="run_pid_controller Coverage Results" MODIFIED="1613652113425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/examples" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$sarsa_agent.coverage" NAME="sarsa_agent Coverage Results" MODIFIED="1613978872101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$run_pid_controller.coverage" NAME="run_pid_controller Coverage Results" MODIFIED="1613973839519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/examples" />
     <SUITE FILE_PATH="coverage/Machine_Learning$cartpole_dqn.coverage" NAME="cartpole_dqn Coverage Results" MODIFIED="1612866224441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn" />
     <SUITE FILE_PATH="coverage/Machine_Learning$topology.coverage" NAME="topology Coverage Results" MODIFIED="1612104108981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda3/envs/3.6ML/Lib/site-packages/keras/engine" />
     <SUITE FILE_PATH="coverage/Machine_Learning$Unittests_for_test_pid_controller_TestPIDController_test_pid_controller.coverage" NAME="Unittests for test_pid_controller.TestPIDController.test_pid_controller Coverage Results" MODIFIED="1612787526139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simglucose/tests" />
-    <SUITE FILE_PATH="coverage/Machine_Learning$reinforce_agent.coverage" NAME="reinforce_agent Coverage Results" MODIFIED="1613570010728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$reinforce_agent.coverage" NAME="reinforce_agent Coverage Results" MODIFIED="1613972032362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$breakout_dqn.coverage" NAME="breakout_dqn Coverage Results" MODIFIED="1614168254614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/3-atari/1-breakout" />
     <SUITE FILE_PATH="coverage/Machine_Learning$user_interface.coverage" NAME="user_interface Coverage Results" MODIFIED="1611907684319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/simglucose/simulation" />
-    <SUITE FILE_PATH="coverage/Machine_Learning$q_learning_agent.coverage" NAME="q_learning_agent Coverage Results" MODIFIED="1612188931299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$q_learning_agent.coverage" NAME="q_learning_agent Coverage Results" MODIFIED="1613978888057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/5-q-learning" />
     <SUITE FILE_PATH="coverage/Machine_Learning$testJJ.coverage" NAME="testJJ Coverage Results" MODIFIED="1611907556229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator" />
     <SUITE FILE_PATH="coverage/Machine_Learning$run_pid_controller__1_.coverage" NAME="run_pid_controller (1) Coverage Results" MODIFIED="1612787505045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simglucose/examples" />
     <SUITE FILE_PATH="coverage/Machine_Learning$apply_customized_controller.coverage" NAME="apply_customized_controller Coverage Results" MODIFIED="1612786783762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/examples" />
