@@ -1,0 +1,15 @@
+Dexcom sensor
+as PACF goes down, error goes down
+
+CGM sensor
+%SensorType=1
+
+%PACF=0.7
+%type=SU
+%gamma=-0.5444
+%lambda=15.9574
+%delta=1.6898
+%xi=-5.47
+%sampling=3
+%min=39
+%max=600

@@ -1,0 +1,6539 @@
+Model {
+  Name			  "testing_platform"
+  Version		  7.5
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.1338"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Tue Jun 19 10:29:37 2007"
+  Creator		  "Marc Breton"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "sriddle"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Apr 14 09:51:47 2014"
+  RTWModifiedTimeStamp	  319369693
+  ModelVersionFormat	  "1.%<AutoIncrement:1338>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0"
+	  StopTime		  "600"
+	  AbsTol		  "auto"
+	  FixedStep		  "1"
+	  InitialStep		  "0.1"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "1"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t,u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  off
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    4
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "none"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "Warning"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 228, 4, 1187, 906 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataStoreMemory
+      ReadBeforeWriteMsg      "none"
+      WriteAfterWriteMsg      "none"
+      WriteAfterReadMsg	      "none"
+      InitialValue	      "0"
+      StateMustResolveToSignalObject off
+      ShowAdditionalParam     off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      DataLogging	      off
+      DataLoggingLimitDataPoints off
+      DataLoggingMaxPoints    "5000"
+      DataLoggingDecimateData off
+      DataLoggingDecimation   "2"
+      DataLoggingNameMode     "SignalName"
+    }
+    Block {
+      BlockType		      DataStoreRead
+    }
+    Block {
+      BlockType		      DataStoreWrite
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Lookup
+      Table		      " rand(1,10)-0.5"
+      LookUpMeth	      "Interpolation-Extrapolation"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+      LUTDesignTableMode      "Redesign Table"
+      LUTDesignDataSource     "Block Dialog"
+      LUTDesignFunctionName   "sqrt(x)"
+      LUTDesignUseExistingBP  on
+      LUTDesignRelError	      "0.01"
+      LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Quantizer
+      QuantizationInterval    "0.5"
+      LinearizeAsGain	      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      RateTransition
+      Integrity		      on
+      Deterministic	      on
+      X0		      "0"
+      OutPortSampleTimeOpt    "Specify"
+      OutPortSampleTimeMultiple	"1"
+      OutPortSampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Rounding
+      Operator		      "floor"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  System {
+    Name		    "testing_platform"
+    Location		    [37, 98, 1709, 1046]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    4506
+    Block {
+      BlockType		      Scope
+      Name		      "CHO"
+      SID		      3139
+      Ports		      [1]
+      Position		      [735, 199, 765, 231]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [15, 325, 697, 546]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "0"
+      YMax		      "4.25"
+      SaveName		      "ScopeData11"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      SID		      1
+      Position		      [200, 645, 220, 665]
+      BackgroundColor	      "gray"
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock1"
+      SID		      2
+      Position		      [1355, 850, 1375, 870]
+      BlockRotation	      270
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "G"
+      SID		      4
+      Ports		      [1]
+      Position		      [1095, 309, 1125, 341]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [5, 83, 1449, 505]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "1440            "
+      YMin		      "97.5"
+      YMax		      "152.5"
+      SaveName		      "ScopeData7"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Human Model"
+      SID		      5
+      Ports		      [6, 4]
+      Position		      [795, 24, 980, 576]
+      BackgroundColor	      "lightBlue"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Human Model"
+	Location		[523, 113, 1791, 990]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"128"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Glucagon"
+	  SID			  3171
+	  Position		  [160, 344, 190, 356]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pramlintide [ug/min]"
+	  SID			  2872
+	  Position		  [160, 299, 190, 311]
+	  BackgroundColor	  "cyan"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "meals"
+	  SID			  6
+	  Position		  [15, 74, 45, 86]
+	  BackgroundColor	  "cyan"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "dextrose_IV_injection"
+	  SID			  7
+	  Position		  [160, 253, 190, 267]
+	  BackgroundColor	  "cyan"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "insulin_IV_injection"
+	  SID			  8
+	  Position		  [160, 208, 190, 222]
+	  BackgroundColor	  "cyan"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "insulin_subQ_injection"
+	  SID			  9
+	  Position		  [160, 118, 190, 132]
+	  BackgroundColor	  "cyan"
+	  NamePlacement		  "alternate"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store"
+	  SID			  10
+	  Position		  [535, 312, 576, 345]
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
+	  DataStoreName		  "qstot"
+	  RTWStateStorageClass	  "Auto"
+	  VectorParams1D	  on
+	  SignalType		  "real"
+	}
+	Block {
+	  BlockType		  DataStoreRead
+	  Name			  "Data Store\nRead"
+	  SID			  11
+	  Position		  [380, 155, 410, 185]
+	  BackgroundColor	  "lightBlue"
+	  ShowName		  off
+	  DataStoreName		  "qstot"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Data Store write"
+	  SID			  12
+	  Ports			  [1, 0, 0, 1]
+	  Position		  [55, 389, 100, 431]
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.380392, 0.741176, 0.988235]"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Data Store write"
+	    Location		    [564, 82, 1140, 612]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "179"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "qsto"
+	      SID		      13
+	      Position		      [40, 33, 70, 47]
+	      IconDisplay	      "Port number"
+	      LatchByDelayingOutsideSignal on
+	    }
+	    Block {
+	      BlockType		      TriggerPort
+	      Name		      "Trigger"
+	      SID		      14
+	      Ports		      []
+	      Position		      [205, 30, 225, 50]
+	      StatesWhenEnabling      "held"
+	    }
+	    Block {
+	      BlockType		      DataStoreWrite
+	      Name		      "Data Store\nWrite"
+	      SID		      15
+	      Position		      [125, 25, 155, 55]
+	      DataStoreName	      "qstot"
+	      SampleTime	      "-1"
+	    }
+	    Line {
+	      SrcBlock		      "qsto"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Data Store\nWrite"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground"
+	  SID			  4249
+	  Position		  [440, 295, 460, 315]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Metabolic Model"
+	  SID			  16
+	  Ports			  [1, 1]
+	  Position		  [510, 179, 595, 251]
+	  BackgroundColor	  "[0.925490, 0.549020, 0.858824]"
+	  FunctionName		  "metab_model"
+	  Parameters		  "struttura"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux2"
+	  SID			  17
+	  Ports			  [7, 1]
+	  Position		  [475, 58, 485, 372]
+	  ShowName		  off
+	  Inputs		  "7"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  4248
+	  Position		  [345, 295, 365, 315]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "per kg of weight1"
+	  SID			  20
+	  Position		  [370, 110, 400, 140]
+	  BackgroundColor	  "[0.996078, 0.827451, 0.952941]"
+	  Gain			  "1/struttura.BW"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "per kg of weight2"
+	  SID			  21
+	  Position		  [395, 200, 425, 230]
+	  BackgroundColor	  "[0.996078, 0.827451, 0.952941]"
+	  Gain			  "1/struttura.BW"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "per kg of weight3"
+	  SID			  4238
+	  Position		  [405, 335, 435, 365]
+	  BackgroundColor	  "[0.996078, 0.827451, 0.952941]"
+	  Gain			  "1/struttura.BW"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "routeur"
+	  SID			  22
+	  Ports			  [1, 5]
+	  Position		  [645, 144, 710, 286]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "routeur"
+	    Location		    [69, 82, 1011, 871]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "156"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "X"
+	      SID		      23
+	      Position		      [15, 243, 45, 257]
+	      BackgroundColor	      "cyan"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux2"
+	      SID		      24
+	      Ports		      [1, 27]
+	      Position		      [70, 22, 75, 478]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "27"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      SID		      3184
+	      Position		      [380, 150, 440, 180]
+	      BackgroundColor	      "[1.000000, 0.501961, 0.501961]"
+	      Expr		      "(struttura.kGSRs*(struttura.Gth-(u(1)))/((u(2)-struttura.Ith)+1)+struttura.k01g*struttura.Gnb)"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "GSRs"
+	      SID		      3186
+	      Ports		      [1]
+	      Position		      [465, 149, 495, 181]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Floating		      off
+	      Location		      [185, 81, 1641, 363]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      SaveName		      "ScopeData13"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "GSRs1"
+	      SID		      3187
+	      Ports		      [1]
+	      Position		      [405, 229, 435, 261]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Floating		      off
+	      Location		      [188, 541, 1644, 829]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      SaveName		      "ScopeData14"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "It"
+	      SID		      3182
+	      Ports		      [1]
+	      Position		      [415, 89, 445, 121]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Floating		      off
+	      Location		      [188, 390, 512, 629]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      SaveName		      "ScopeData10"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      3185
+	      Ports		      [2, 1]
+	      Position		      [350, 146, 355, 184]
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux1"
+	      SID		      25
+	      Ports		      [8, 1]
+	      Position		      [185, 36, 190, 159]
+	      ForegroundColor	      "red"
+	      ShowName		      off
+	      Inputs		      "8"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux2"
+	      SID		      26
+	      Ports		      [18, 1]
+	      Position		      [185, 163, 190, 442]
+	      ForegroundColor	      "blue"
+	      ShowName		      off
+	      Inputs		      "18"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope"
+	      SID		      3180
+	      Ports		      [1]
+	      Position		      [405, 379, 435, 411]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Floating		      off
+	      Location		      [656, 91, 980, 330]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      SaveName		      "ScopeData1"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Scope
+	      Name		      "Scope1"
+	      SID		      3181
+	      Ports		      [1]
+	      Position		      [405, 319, 435, 351]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Floating		      off
+	      Location		      [188, 390, 1527, 812]
+	      Open		      off
+	      NumInputPorts	      "1"
+	      List {
+		ListType		AxesTitles
+		axes1			"%<SignalLabel>"
+	      }
+	      SaveName		      "ScopeData2"
+	      DataFormat	      "StructureWithTime"
+	      SampleTime	      "0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BG"
+	      SID		      27
+	      Position		      [465, 43, 495, 57]
+	      BackgroundColor	      "red"
+	      NamePlacement	      "alternate"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Sigma_X"
+	      SID		      28
+	      Position		      [235, 298, 265, 312]
+	      BackgroundColor	      "red"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Phys_X"
+	      SID		      29
+	      Position		      [235, 93, 265, 107]
+	      BackgroundColor	      "red"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "IG"
+	      SID		      30
+	      Position		      [390, 58, 420, 72]
+	      BackgroundColor	      "red"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qsto(t)"
+	      SID		      31
+	      Position		      [240, 438, 270, 452]
+	      BackgroundColor	      "red"
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "X"
+	      SrcPort		      1
+	      DstBlock		      "Demux2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux1"
+	      SrcPort		      1
+	      DstBlock		      "Phys_X"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -5; 40, 0]
+	      Branch {
+		Points			[25, 0]
+		DstBlock		"Mux1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[55, 0]
+		Branch {
+		  DstBlock		  "BG"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 105]
+		  DstBlock		  "Mux"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      2
+	      Points		      [25, 0; 0, -5; 40, 0]
+	      Branch {
+		Points			[25, 0]
+		DstBlock		"Mux1"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"IG"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      3
+	      Points		      [25, 0; 0, -5; 40, 0]
+	      Branch {
+		Points			[25, 0]
+		DstBlock		"Mux1"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[145, 0]
+		Branch {
+		  Points		  [65, 0; 0, 25]
+		  DstBlock		  "It"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 95]
+		  DstBlock		  "Mux"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      4
+	      Points		      [25, 0; 0, -10]
+	      DstBlock		      "Mux1"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      5
+	      Points		      [25, 0; 0, -10]
+	      DstBlock		      "Mux1"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      6
+	      Points		      [25, 0; 0, -5; 45, 0]
+	      Branch {
+		Points			[20, 0]
+		DstBlock		"Mux1"
+		DstPort			6
+	      }
+	      Branch {
+		Points			[0, 120]
+		DstBlock		"GSRs1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      7
+	      Points		      [25, 0; 0, -10]
+	      DstBlock		      "Mux1"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      8
+	      Points		      [25, 0; 0, -10]
+	      DstBlock		      "Mux1"
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      9
+	      DstBlock		      "Mux2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      10
+	      DstBlock		      "Mux2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      11
+	      DstBlock		      "Mux2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      12
+	      DstBlock		      "Mux2"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      13
+	      DstBlock		      "Mux2"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      14
+	      DstBlock		      "Mux2"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      15
+	      DstBlock		      "Mux2"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      16
+	      DstBlock		      "Mux2"
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      17
+	      DstBlock		      "Mux2"
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      18
+	      DstBlock		      "Mux2"
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      19
+	      DstBlock		      "Mux2"
+	      DstPort		      11
+	    }
+	    Line {
+	      SrcBlock		      "Mux2"
+	      SrcPort		      1
+	      DstBlock		      "Sigma_X"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      DstBlock		      "GSRs"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      27
+	      DstBlock		      "qsto(t)"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      20
+	      DstBlock		      "Mux2"
+	      DstPort		      12
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      21
+	      DstBlock		      "Mux2"
+	      DstPort		      13
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      22
+	      Points		      [65, 0]
+	      Branch {
+		Points			[0, -35]
+		DstBlock		"Scope1"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Mux2"
+		DstPort			14
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      23
+	      DstBlock		      "Mux2"
+	      DstPort		      15
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      24
+	      Points		      [70, 0]
+	      Branch {
+		DstBlock		"Mux2"
+		DstPort			16
+	      }
+	      Branch {
+		Points			[0, -5]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      25
+	      DstBlock		      "Mux2"
+	      DstPort		      17
+	    }
+	    Line {
+	      SrcBlock		      "Demux2"
+	      SrcPort		      26
+	      DstBlock		      "Mux2"
+	      DstPort		      18
+	    }
+	    Annotation {
+	      Position		      [291, 219]
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "save system states"
+	  SID			  32
+	  Ports			  [1]
+	  Position		  [645, 62, 730, 108]
+	  BackgroundColor	  "red"
+	  VariableName		  "system_state"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	  SaveFormat		  "Structure With Time"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "physiological states"
+	  SID			  34
+	  Position		  [775, 208, 805, 222]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "model states"
+	  SID			  35
+	  Position		  [775, 178, 805, 192]
+	  BackgroundColor	  "red"
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "blood_glucose"
+	  SID			  33
+	  Position		  [775, 148, 805, 162]
+	  BackgroundColor	  "red"
+	  NamePlacement		  "alternate"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "interstitial glucose"
+	  SID			  36
+	  Position		  [775, 238, 805, 252]
+	  BackgroundColor	  "red"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Metabolic Model"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "routeur"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -130]
+	    DstBlock		    "save system states"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "routeur"
+	  SrcPort		  3
+	  DstBlock		  "physiological states"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "routeur"
+	  SrcPort		  1
+	  DstBlock		  "blood_glucose"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "insulin_subQ_injection"
+	  SrcPort		  1
+	  DstBlock		  "per kg of weight1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux2"
+	  SrcPort		  1
+	  DstBlock		  "Metabolic Model"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "routeur"
+	  SrcPort		  2
+	  DstBlock		  "model states"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Data Store\nRead"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "routeur"
+	  SrcPort		  4
+	  DstBlock		  "interstitial glucose"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "per kg of weight1"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "insulin_IV_injection"
+	  SrcPort		  1
+	  DstBlock		  "per kg of weight2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "dextrose_IV_injection"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "routeur"
+	  SrcPort		  5
+	  Points		  [32, 0; 0, 135]
+	  DstBlock		  "Data Store write"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "per kg of weight2"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "meals"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [-5, 0]
+	    DstBlock		    "Data Store write"
+	    DstPort		    trigger
+	  }
+	  Branch {
+	    DstBlock		    "Mux2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Pramlintide [ug/min]"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "Glucagon"
+	  SrcPort		  1
+	  DstBlock		  "per kg of weight3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "per kg of weight3"
+	  SrcPort		  1
+	  DstBlock		  "Mux2"
+	  DstPort		  7
+	}
+	Annotation {
+	  Name			  "not\ninstalled"
+	  Position		  [404, 303]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "INJ, U"
+      SID		      39
+      Ports		      [1]
+      Position		      [940, 599, 970, 631]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [27, 826, 708, 1032]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "900"
+      YMin		      "0"
+      YMax		      "0.25"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "IVBG_Sensor"
+      SID		      4213
+      Ports		      [1]
+      Position		      [1069, 670, 1101, 700]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      NamePlacement	      "alternate"
+      Floating		      off
+      Location		      [9, 911, 693, 1152]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "720             "
+      YMin		      "110"
+      YMax		      "155"
+      SaveName		      "ScopeData12"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "IV_Glucose"
+      SID		      4335
+      Ports		      [1]
+      Position		      [750, 364, 780, 396]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [716, 326, 1398, 549]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "1440            "
+      YMin		      "97.5"
+      YMax		      "152.5"
+      SaveName		      "ScopeData25"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "IV_Insulin"
+      SID		      4336
+      Ports		      [1]
+      Position		      [650, 389, 680, 421]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [717, 619, 1402, 844]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "1440            "
+      YMin		      "97.5"
+      YMax		      "152.5"
+      SaveName		      "ScopeData26"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      40
+      Ports		      [2, 1]
+      Position		      [435, 741, 440, 794]
+      BlockMirror	      on
+      ForegroundColor	      "orange"
+      BackgroundColor	      "orange"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      SID		      41
+      Ports		      [2, 1]
+      Position		      [1405, 318, 1410, 422]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      SID		      3155
+      Ports		      [2, 1]
+      Position		      [700, 195, 710, 235]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      SID		      4214
+      Ports		      [2, 1]
+      Position		      [1033, 625, 1137, 630]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "red"
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Pramlintide"
+      SID		      4334
+      Ports		      [1]
+      Position		      [730, 104, 760, 136]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [5, 83, 701, 320]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "1440            "
+      YMin		      "97.5"
+      YMax		      "152.5"
+      SaveName		      "ScopeData24"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "SQ_Glucagon"
+      SID		      4333
+      Ports		      [1]
+      Position		      [635, 24, 665, 56]
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [5, 83, 1016, 296]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "1440            "
+      YMin		      "97.5"
+      YMax		      "152.5"
+      SaveName		      "ScopeData9"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "SQ_Insulin"
+      SID		      4370
+      Ports		      [1]
+      Position		      [394, 605, 426, 635]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      Floating		      off
+      Location		      [14, 620, 699, 845]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "1440            "
+      YMin		      "97.5"
+      YMax		      "152.5"
+      SaveName		      "ScopeData17"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "STD_Treat_v3_2"
+      SID		      4254
+      Ports		      [6, 7]
+      Position		      [605, 739, 1110, 921]
+      BlockMirror	      on
+      ForegroundColor	      "orange"
+      BackgroundColor	      "orange"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"STD_Treat_v3_2"
+	Location		[1, 124, 1324, 724]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"96"
+	Block {
+	  BlockType		  Inport
+	  Name			  "glucose"
+	  SID			  4255
+	  Position		  [65, 303, 95, 317]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "meal announcement"
+	  SID			  4256
+	  Position		  [65, 128, 95, 142]
+	  BackgroundColor	  "cyan"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ToD"
+	  SID			  4257
+	  Position		  [65, 353, 95, 367]
+	  BackgroundColor	  "cyan"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Glucagon injection"
+	  SID			  4258
+	  Position		  [65, 453, 95, 467]
+	  BackgroundColor	  "cyan"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pramlintide injection"
+	  SID			  4259
+	  Position		  [65, 398, 95, 412]
+	  BackgroundColor	  "cyan"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Insulin injection"
+	  SID			  4260
+	  Position		  [250, 328, 280, 342]
+	  BackgroundColor	  "cyan"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Bolus_U"
+	  SID			  4262
+	  Ports			  [1]
+	  Position		  [1170, 69, 1200, 101]
+	  BackgroundColor	  "[0.858824, 0.858824, 0.858824]"
+	  NamePlacement		  "alternate"
+	  Floating		  off
+	  Location		  [17, 542, 341, 781]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "60000"
+	  SaveName		  "ScopeData5"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "CHO1"
+	  SID			  4265
+	  Ports			  [1]
+	  Position		  [130, 39, 160, 71]
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.858824, 0.858824, 0.858824]"
+	  Floating		  off
+	  Location		  [7, 918, 553, 1103]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "60"
+	  SaveName		  "ScopeData15"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  SID			  4266
+	  Position		  [1155, 455, 1195, 495]
+	  BackgroundColor	  "lightBlue"
+	  Decimation		  "10"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  SID			  4270
+	  Position		  [940, 306, 1020, 334]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  ShowName		  off
+	  Value			  "ctrller.basal"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant6"
+	  SID			  4271
+	  Position		  [735, 150, 755, 170]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  SID			  4272
+	  Position		  [250, 81, 330, 99]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  ShowName		  off
+	  Value			  "ctrller.CR"
+	}
+	Block {
+	  BlockType		  DataStoreRead
+	  Name			  "Data Store\nRead"
+	  SID			  4277
+	  Position		  [1070, 205, 1100, 235]
+	  BackgroundColor	  "[1.000000, 0.501961, 1.000000]"
+	  DataStoreName		  "A"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  DataStoreWrite
+	  Name			  "Data Store\nWrite"
+	  SID			  4278
+	  Position		  [1230, 115, 1260, 145]
+	  BackgroundColor	  "[1.000000, 0.501961, 1.000000]"
+	  DataStoreName		  "A"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  SID			  4279
+	  Ports			  [1, 2]
+	  Position		  [185, 88, 200, 177]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide"
+	  SID			  4281
+	  Ports			  [2, 1]
+	  Position		  [370, 80, 410, 120]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  Inputs		  "/*"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  SID			  4282
+	  Position		  [1253, 425, 1287, 450]
+	  BlockRotation		  270
+	  BackgroundColor	  "[0.960784, 0.760784, 0.921569]"
+	  ShowName		  off
+	  Gain			  "1/60"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground1"
+	  SID			  4365
+	  Position		  [680, 280, 700, 300]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground2"
+	  SID			  4366
+	  Position		  [685, 385, 705, 405]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground3"
+	  SID			  4368
+	  Position		  [675, 325, 695, 345]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground4"
+	  SID			  4287
+	  Position		  [680, 500, 700, 520]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground5"
+	  SID			  4369
+	  Position		  [680, 435, 700, 455]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Meal_BolusTRUE"
+	  SID			  4293
+	  Ports			  [1]
+	  Position		  [490, 24, 520, 56]
+	  BackgroundColor	  "[0.858824, 0.858824, 0.858824]"
+	  Floating		  off
+	  Location		  [11, 776, 691, 936]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  SaveName		  "ScopeData20"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  SID			  4296
+	  Ports			  [2]
+	  Position		  [400, 236, 430, 269]
+	  BackgroundColor	  "[0.858824, 0.858824, 0.858824]"
+	  Floating		  off
+	  Location		  [7, 159, 714, 445]
+	  Open			  off
+	  NumInputPorts		  "2"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	    axes2		    "%<SignalLabel>"
+	  }
+	  YMin			  "-5~-5"
+	  YMax			  "5~5"
+	  SaveName		  "ScopeData21"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  4298
+	  Ports			  [2, 1]
+	  Position		  [1225, 465, 1245, 485]
+	  BackgroundColor	  "gray"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  SID			  4303
+	  Position		  [805, 81, 825, 179]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  4306
+	  Position		  [1310, 465, 1330, 485]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator2"
+	  SID			  4307
+	  Position		  [155, 350, 175, 370]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator3"
+	  SID			  4308
+	  Position		  [235, 145, 255, 165]
+	  BackgroundColor	  "gray"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator4"
+	  SID			  4309
+	  Position		  [155, 395, 175, 415]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator5"
+	  SID			  4344
+	  Position		  [150, 450, 170, 470]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator6"
+	  SID			  4364
+	  Position		  [355, 325, 375, 345]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator7"
+	  SID			  4367
+	  Position		  [155, 300, 175, 320]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Time_of_Day,HOUR"
+	  SID			  4311
+	  Ports			  [1]
+	  Position		  [1254, 365, 1286, 395]
+	  BlockRotation		  270
+	  BackgroundColor	  "[0.858824, 0.858824, 0.858824]"
+	  NamePlacement		  "alternate"
+	  Floating		  off
+	  Location		  [790, 626, 1435, 865]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "60000"
+	  SaveName		  "ScopeData22"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Time_to_Meal1"
+	  SID			  4312
+	  Ports			  [1]
+	  Position		  [634, 215, 666, 245]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.858824, 0.858824, 0.858824]"
+	  NamePlacement		  "alternate"
+	  Floating		  off
+	  Location		  [39, 822, 363, 1061]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  SaveName		  "ScopeData23"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "U 2 pmol1"
+	  SID			  4313
+	  Position		  [1090, 115, 1120, 145]
+	  BackgroundColor	  "[0.960784, 0.760784, 0.921569]"
+	  Gain			  "6000"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "U/hr 2 pmol/min"
+	  SID			  4315
+	  Position		  [1085, 305, 1115, 335]
+	  BackgroundColor	  "[0.960784, 0.760784, 0.921569]"
+	  Gain			  "100"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold1"
+	  SID			  4316
+	  Position		  [1020, 115, 1045, 145]
+	  BackgroundColor	  "darkGreen"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "avoid algebraic loop"
+	  SID			  4317
+	  Position		  [940, 205, 972, 235]
+	  BackgroundColor	  "[1.000000, 0.501961, 1.000000]"
+	  DataStoreName		  "A"
+	  ReadBeforeWriteMsg	  "warning"
+	  WriteAfterWriteMsg	  "warning"
+	  WriteAfterReadMsg	  "warning"
+	  RTWStateStorageClass	  "Auto"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "detect meal_at_Meal"
+	  SID			  4321
+	  Position		  [300, 185, 480, 215]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  Expr			  "1*(u(1)>0 && abs(u(2))<0.5)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "meal announce SIGNAL AT MealTime"
+	  SID			  4322
+	  Position		  [205, 251, 360, 269]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Expr			  "1*(u(1)>0 && u(2)<0.5)"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "min0 max100"
+	  SID			  4323
+	  Ports			  [1, 1]
+	  Position		  [950, 115, 980, 145]
+	  BackgroundColor	  "darkGreen"
+	  UpperLimit		  "100"
+	  LowerLimit		  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "start sim ToD"
+	  SID			  4325
+	  Position		  [1167, 515, 1303, 535]
+	  BlockRotation		  270
+	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "scenario.simToD"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "suggested basal pump rate [pmol per min]"
+	  SID			  4326
+	  Position		  [1220, 313, 1250, 327]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "suggested bolus pump rate [pmol per min]"
+	  SID			  4327
+	  Position		  [1210, 213, 1240, 227]
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IV insulin [pmol per min]"
+	  SID			  4328
+	  Position		  [795, 328, 825, 342]
+	  BackgroundColor	  "red"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IV dextrose [mg per Kg per min]"
+	  SID			  4329
+	  Position		  [795, 388, 825, 402]
+	  BackgroundColor	  "red"
+	  NamePlacement		  "alternate"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "carbs [g/min]"
+	  SID			  4330
+	  Position		  [780, 283, 810, 297]
+	  BackgroundColor	  "red"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "SQ pramlintide [mcg/min]"
+	  SID			  4331
+	  Position		  [765, 503, 795, 517]
+	  BackgroundColor	  "red"
+	  NamePlacement		  "alternate"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "SQ glucagon [mg/min]"
+	  SID			  4332
+	  Position		  [795, 438, 825, 452]
+	  BackgroundColor	  "red"
+	  NamePlacement		  "alternate"
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Data Store\nRead"
+	  SrcPort		  1
+	  DstBlock		  "suggested bolus pump rate [pmol per min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "U/hr 2 pmol/min"
+	  SrcPort		  1
+	  DstBlock		  "suggested basal pump rate [pmol per min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "U/hr 2 pmol/min"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ToD"
+	  SrcPort		  1
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant6"
+	  SrcPort		  1
+	  DstBlock		  "Switch2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "detect meal_at_Meal"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, -70; 85, 0]
+	  Branch {
+	    DstBlock		    "Switch2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Time_to_Meal1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Divide"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "CHO1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "meal announcement"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  Branch {
+	    DstBlock		    "Demux1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65; 20, 0]
+	    Branch {
+	      Points		      [0, 60]
+	      DstBlock		      "meal announce SIGNAL AT MealTime"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [100, 0]
+	      Branch {
+		DstBlock		"detect meal_at_Meal"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Terminator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "Meal_BolusTRUE"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Switch2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold1"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "U 2 pmol1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -45]
+	    DstBlock		    "Bolus_U"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "U 2 pmol1"
+	  SrcPort		  1
+	  DstBlock		  "Data Store\nWrite"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "min0 max100"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    DstBlock		    "Terminator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Gain"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "start sim ToD"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Time_of_Day,HOUR"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground5"
+	  SrcPort		  1
+	  DstBlock		  "SQ glucagon [mg/min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground4"
+	  SrcPort		  1
+	  DstBlock		  "SQ pramlintide [mcg/min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pramlintide injection"
+	  SrcPort		  1
+	  DstBlock		  "Terminator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground2"
+	  SrcPort		  1
+	  DstBlock		  "IV dextrose [mg per Kg per min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Glucagon injection"
+	  SrcPort		  1
+	  DstBlock		  "Terminator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground1"
+	  SrcPort		  1
+	  DstBlock		  "carbs [g/min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ground3"
+	  SrcPort		  1
+	  DstBlock		  "IV insulin [pmol per min]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "meal announce SIGNAL AT MealTime"
+	  SrcPort		  1
+	  DstBlock		  "Scope"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Insulin injection"
+	  SrcPort		  1
+	  DstBlock		  "Terminator6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "glucose"
+	  SrcPort		  1
+	  DstBlock		  "Terminator7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  DstBlock		  "min0 max100"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "MEAL   BOLUS   CALCULATION"
+	  Position		  [301, 47]
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Sensor selector"
+      SID		      42
+      Ports		      [3, 1]
+      Position		      [1245, 431, 1340, 529]
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Sensor selector"
+	Location		[199, 82, 1053, 568]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "IV"
+	  SID			  45
+	  Position		  [55, 153, 85, 167]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "CGM"
+	  SID			  44
+	  Position		  [55, 88, 85, 102]
+	  BackgroundColor	  "cyan"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "SMBG"
+	  SID			  43
+	  Position		  [55, 38, 85, 52]
+	  BackgroundColor	  "cyan"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "IV/CGM"
+	  SID			  47
+	  Position		  [105, 131, 240, 149]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  Value			  "hardware.SensorType"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "IV/CGM1"
+	  SID			  48
+	  Position		  [110, 62, 245, 78]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  Value			  "hardware.SensorType"
+	}
+	Block {
+	  BlockType		  Quantizer
+	  Name			  "Quantizer"
+	  SID			  2431
+	  Position		  [515, 125, 545, 155]
+	  ForegroundColor	  "blue"
+	  BackgroundColor	  "[0.000000, 1.000000, 1.000000]"
+	  NamePlacement		  "alternate"
+	  QuantizationInterval	  "1"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  49
+	  Position		  [430, 111, 455, 169]
+	  BackgroundColor	  "gray"
+	  NamePlacement		  "alternate"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  SID			  50
+	  Position		  [310, 31, 335, 109]
+	  BackgroundColor	  "gray"
+	  NamePlacement		  "alternate"
+	  Criteria		  "u2 > Threshold"
+	  Threshold		  "1"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Sensor BG"
+	  SID			  52
+	  Position		  [600, 133, 630, 147]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "IV"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "CGM"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, 50]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "IV/CGM"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "IV/CGM1"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "SMBG"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Quantizer"
+	  SrcPort		  1
+	  DstBlock		  "Sensor BG"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Quantizer"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      SID		      53
+      Ports		      [2, 1]
+      Position		      [330, 595, 350, 615]
+      ForegroundColor	      "red"
+      BackgroundColor	      "gray"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      SID		      54
+      Ports		      [2, 1]
+      Position		      [1355, 805, 1375, 825]
+      BlockMirror	      on
+      BackgroundColor	      "gray"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      SID		      55
+      Ports		      [2, 1]
+      Position		      [720, 455, 740, 475]
+      BlockMirror	      on
+      ForegroundColor	      "blue"
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "+|+"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      SID		      56
+      Ports		      [2, 1]
+      Position		      [640, 245, 660, 265]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "++|"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch_closed loop"
+      SID		      57
+      Position		      [435, 510, 465, 540]
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch_closed loop1"
+      SID		      58
+      Position		      [500, 420, 530, 450]
+      BackgroundColor	      "gray"
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch_closed loop2"
+      SID		      59
+      Position		      [500, 330, 530, 360]
+      BackgroundColor	      "gray"
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch_closed loop3"
+      SID		      60
+      Position		      [600, 200, 630, 230]
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch_closed loop4"
+      SID		      2879
+      Position		      [500, 150, 530, 180]
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Switch_closed loop5"
+      SID		      3172
+      Position		      [500, 60, 530, 90]
+      BackgroundColor	      "gray"
+      NamePlacement	      "alternate"
+      Criteria		      "u2 > Threshold"
+      InputSameDT	      off
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      61
+      Ports		      [1]
+      Position		      [698, 645, 762, 675]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "red"
+      ShowName		      off
+      VariableName	      "injection"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      62
+      Ports		      [1]
+      Position		      [690, 295, 765, 315]
+      BackgroundColor	      "red"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      VariableName	      "carb_intake"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      SID		      1876
+      Ports		      [1]
+      Position		      [533, 690, 607, 710]
+      BlockRotation	      270
+      BackgroundColor	      "red"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      VariableName	      "BASAL"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      SID		      1875
+      Ports		      [1]
+      Position		      [479, 665, 551, 685]
+      BlockRotation	      270
+      BackgroundColor	      "red"
+      ShowName		      off
+      VariableName	      "BOLUS"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      SID		      2172
+      Ports		      [1]
+      Position		      [454, 640, 526, 660]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "red"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      VariableName	      "To_PUMP"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "U to pmol"
+      SID		      66
+      Position		      [315, 500, 345, 530]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      Gain		      "6000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "U/min to pmol/min"
+      SID		      67
+      Position		      [335, 410, 365, 440]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      NamePlacement	      "alternate"
+      Gain		      "6000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "g CHO/min  to mg CHO/kg/min"
+      SID		      68
+      Position		      [350, 320, 380, 350]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      NamePlacement	      "alternate"
+      Gain		      "1000/struttura.BW"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "g to mg"
+      SID		      69
+      Position		      [690, 240, 720, 270]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      Gain		      "1000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "glucose sensor"
+      SID		      70
+      Ports		      [2, 2]
+      Position		      [1090, 463, 1205, 527]
+      BackgroundColor	      "magenta"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"glucose sensor"
+	Location		[363, 175, 1289, 786]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BG"
+	  SID			  71
+	  Position		  [45, 313, 75, 327]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "IG"
+	  SID			  72
+	  Position		  [145, 78, 175, 92]
+	  BackgroundColor	  "cyan"
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  74
+	  Ports			  [2, 1]
+	  Position		  [325, 23, 365, 127]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  ShowName		  off
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add1"
+	  SID			  75
+	  Ports			  [2, 1]
+	  Position		  [650, 271, 685, 464]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  ShowName		  off
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add2"
+	  SID			  76
+	  Ports			  [2, 1]
+	  Position		  [415, 424, 445, 466]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  ShowName		  off
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace"
+	  SID			  82
+	  Position		  [45, 166, 175, 184]
+	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  VariableName		  "struttura.noise.CGM"
+	  SampleTime		  "0"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace1"
+	  SID			  83
+	  Position		  [130, 360, 280, 380]
+	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  VariableName		  "struttura.noise.SMBG.noise"
+	  SampleTime		  "0"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace2"
+	  SID			  4209
+	  Position		  [35, 41, 140, 59]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  VariableName		  "ctrller.CGM_bias"
+	  SampleTime		  "0"
+	  Interpolate		  off
+	  ZeroCross		  on
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace3"
+	  SID			  4211
+	  Position		  [35, 100, 155, 120]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  ShowName		  off
+	  VariableName		  "ctrller.CGM_bias_rel"
+	  SampleTime		  "0"
+	  Interpolate		  off
+	  ZeroCross		  on
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "G"
+	  SID			  84
+	  Ports			  [1]
+	  Position		  [465, 154, 495, 186]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Floating		  off
+	  Location		  [301, 97, 1576, 651]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "-32.5"
+	  YMax			  "10"
+	  SaveName		  "ScopeData4"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "G1"
+	  SID			  85
+	  Ports			  [1]
+	  Position		  [360, 393, 385, 417]
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Floating		  off
+	  Location		  [301, 97, 1576, 651]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "-0.35"
+	  YMax			  "0.3"
+	  SaveName		  "ScopeData8"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ISO 15197 - BG Change Standards"
+	  SID			  81
+	  Position		  [50, 445, 225, 465]
+	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  Value			  "struttura.noise.SMBG.thresh"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  86
+	  Ports			  [2, 1]
+	  Position		  [500, 347, 530, 378]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  SID			  4210
+	  Ports			  [2, 1]
+	  Position		  [230, 71, 260, 124]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  RandomNumber
+	  Name			  "Random\nNumber1"
+	  SID			  87
+	  Position		  [260, 475, 290, 505]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  Variance		  "0.2"
+	  Seed			  "1"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  RateTransition
+	  Name			  "Rate Transition4"
+	  SID			  88
+	  Position		  [640, 61, 675, 89]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  NamePlacement		  "alternate"
+	  X0			  "struttura.x0(4)/struttura.Vg"
+	  OutPortSampleTime	  "1"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  89
+	  Ports			  [2, 1]
+	  Position		  [405, 65, 425, 85]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch STDS"
+	  SID			  90
+	  Position		  [565, 337, 595, 493]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch_noise"
+	  SID			  91
+	  Position		  [345, 159, 375, 241]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 ~= 0"
+	  Threshold		  "1440"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "ZOH_sensor_sampling"
+	  SID			  92
+	  Position		  [460, 60, 495, 90]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  SampleTime		  "hardware.sensor_sampling"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "constant1"
+	  SID			  93
+	  Position		  [185, 210, 215, 240]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "noise_indicator"
+	  SID			  94
+	  Position		  [45, 192, 170, 208]
+	  BackgroundColor	  "[0.501961, 1.000000, 0.501961]"
+	  ShowName		  off
+	  Value			  "struttura.noise_switch"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "sensor_MAX_MIN"
+	  SID			  73
+	  Ports			  [1, 1]
+	  Position		  [565, 60, 595, 90]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  UpperLimit		  "hardware.sensor_max"
+	  LowerLimit		  "hardware.sensor_min"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "struttura.noise.SMBG.absolute_error/1.96\n95% of values to fall within standard"
+	  SID			  79
+	  Position		  [380, 475, 430, 505]
+	  BackgroundColor	  "[0.000000, 0.501961, 1.000000]"
+	  Gain			  "struttura.noise.SMBG.absolute_error/1.96"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "struttura.noise.SMBG.percent_error/1.96\n95% of values to fall within standard"
+	  SID			  78
+	  Position		  [355, 355, 385, 385]
+	  BackgroundColor	  "[0.000000, 0.501961, 1.000000]"
+	  NamePlacement		  "alternate"
+	  Gain			  "struttura.noise.SMBG.percent_error/1.96"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "CGM"
+	  SID			  95
+	  Position		  [735, 68, 765, 82]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "SMBG"
+	  SID			  96
+	  Position		  [735, 363, 765, 377]
+	  BackgroundColor	  "red"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "ZOH_sensor_sampling"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ZOH_sensor_sampling"
+	  SrcPort		  1
+	  DstBlock		  "sensor_MAX_MIN"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "sensor_MAX_MIN"
+	  SrcPort		  1
+	  DstBlock		  "Rate Transition4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From\nWorkspace"
+	  SrcPort		  1
+	  DstBlock		  "Switch_noise"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "noise_indicator"
+	  SrcPort		  1
+	  DstBlock		  "Switch_noise"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch_noise"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch_noise"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -30]
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "G"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "IG"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From\nWorkspace2"
+	  SrcPort		  1
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Rate Transition4"
+	  SrcPort		  1
+	  DstBlock		  "CGM"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From\nWorkspace1"
+	  SrcPort		  1
+	  DstBlock		  "struttura.noise.SMBG.percent_error/1.96\n95% of values to fall within standard"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BG"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [0, 115]
+	    DstBlock		    "Add2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [360, 0]
+	    Branch {
+	      DstBlock		      "Add1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 35]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "ISO 15197 - BG Change Standards"
+	  SrcPort		  1
+	  DstBlock		  "Add2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "struttura.noise.SMBG.percent_error/1.96\n95% of values to fall within standard"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    DstBlock		    "Product"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 35]
+	    DstBlock		    "G1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Switch STDS"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch STDS"
+	  SrcPort		  1
+	  DstBlock		  "Add1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Add2"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -30]
+	  DstBlock		  "Switch STDS"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Random\nNumber1"
+	  SrcPort		  1
+	  DstBlock		  "struttura.noise.SMBG.absolute_error/1.96\n95% of values to fall within standard"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "struttura.noise.SMBG.absolute_error/1.96\n95% of values to fall within standard"
+	  SrcPort		  1
+	  Points		  [50, 0; 0, -25]
+	  DstBlock		  "Switch STDS"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Add1"
+	  SrcPort		  1
+	  DstBlock		  "SMBG"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From\nWorkspace3"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "insulin pump"
+      SID		      4430
+      Ports		      [1, 1]
+      Position		      [520, 476, 705, 574]
+      BackgroundColor	      "cyan"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"insulin pump"
+	Location		[16, 82, 1845, 751]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"147"
+	Block {
+	  BlockType		  Inport
+	  Name			  "SQ [pmol per min]"
+	  SID			  4431
+	  Position		  [80, 138, 110, 152]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Basal Delivery Rate\n w/ Error"
+	  SID			  4432
+	  Ports			  [1, 1]
+	  Position		  [470, 112, 550, 138]
+	  ForegroundColor	  "blue"
+	  BackgroundColor	  "[0.000000, 1.000000, 1.000000]"
+	  NamePlacement		  "alternate"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Basal Delivery Rate\n w/ Error"
+	    Location		    [156, 111, 1078, 582]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "BRin"
+	      SID		      4433
+	      Position		      [15, 168, 45, 182]
+	      BackgroundColor	      "cyan"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Error Accuracy Bounded"
+	      SID		      4434
+	      Ports		      [1, 1]
+	      Position		      [280, 79, 370, 121]
+	      BackgroundColor	      "[0.984314, 0.741176, 0.917647]"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"Error Accuracy Bounded"
+		Location		[231, 285, 1024, 842]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In_1"
+		  SID			  4435
+		  Position		  [100, 28, 130, 42]
+		  BackgroundColor	  "cyan"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup mean"
+		  SID			  4436
+		  Position		  [210, 23, 250, 47]
+		  BackgroundColor	  "[1.000000, 0.725490, 1.000000]"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_mean"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup std dev/average"
+		  SID			  4437
+		  Position		  [210, 122, 245, 138]
+		  BackgroundColor	  "[1.000000, 0.725490, 1.000000]"
+		  NamePlacement		  "alternate"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_std2r"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product"
+		  SID			  4438
+		  Ports			  [3, 1]
+		  Position		  [335, 90, 365, 170]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		  Inputs		  "3"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Scope
+		  Name			  "PumpScope"
+		  SID			  4439
+		  Ports			  [1]
+		  Position		  [500, 119, 530, 151]
+		  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+		  Floating		  off
+		  Location		  [426, 97, 1139, 752]
+		  Open			  off
+		  NumInputPorts		  "1"
+		  List {
+		    ListType		    AxesTitles
+		    axes1		    "%<SignalLabel>"
+		  }
+		  YMin			  "0"
+		  YMax			  "175"
+		  SaveName		  "ScopeData30"
+		  DataFormat		  "StructureWithTime"
+		  LimitDataPoints	  off
+		  SampleTime		  "0"
+		}
+		Block {
+		  BlockType		  RandomNumber
+		  Name			  "Random #\n0 1 "
+		  SID			  4440
+		  Position		  [120, 140, 150, 170]
+		  BackgroundColor	  "[1.000000, 0.725490, 1.000000]"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum2"
+		  SID			  4441
+		  Ports			  [2, 1]
+		  Position		  [395, 60, 415, 80]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|++"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out_1"
+		  SID			  4442
+		  Position		  [500, 63, 530, 77]
+		  BackgroundColor	  "red"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "In_1"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  Branch {
+		    Points		    [0, 95]
+		    DstBlock		    "Lookup std dev/average"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Lookup mean"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Random #\n0 1 "
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Lookup std dev/average"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Product"
+		  SrcPort		  1
+		  Points		  [35, 0]
+		  DstBlock		  "Sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Sum2"
+		  SrcPort		  1
+		  Points		  [40, 0]
+		  Branch {
+		    DstBlock		    "Out_1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 65]
+		    DstBlock		    "PumpScope"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Lookup mean"
+		  SrcPort		  1
+		  Points		  [40, 0; 0, 35]
+		  Branch {
+		    DstBlock		    "Sum2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 0; 0, 35]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator4"
+	      SID		      4445
+	      Ports		      [1, 1]
+	      Position		      [460, 85, 490, 115]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	    }
+	    Block {
+	      BlockType		      Display
+	      Name		      "Total insulin  with error2"
+	      SID		      4446
+	      Ports		      [1]
+	      Position		      [535, 85, 625, 115]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Decimation	      "1"
+	      Lockdown		      off
+	    }
+	    Block {
+	      BlockType		      Display
+	      Name		      "Total insulin [U] instantaneous"
+	      SID		      4447
+	      Ports		      [1]
+	      Position		      [275, 307, 360, 333]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Decimation	      "1"
+	      Lockdown		      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "U/min to pmol/min again"
+	      SID		      4449
+	      Position		      [445, 174, 500, 206]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      Gain		      "6000"
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "pmol/min to U/min"
+	      SID		      4450
+	      Position		      [85, 153, 155, 197]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      Gain		      "1/6000"
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BRwError"
+	      SID		      4451
+	      Position		      [575, 183, 605, 197]
+	      BackgroundColor	      "red"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Integrator4"
+	      SrcPort		      1
+	      DstBlock		      "Total insulin  with error2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Error Accuracy Bounded"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		DstBlock		"Integrator4"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 90]
+		DstBlock		"U/min to pmol/min again"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "U/min to pmol/min again"
+	      SrcPort		      1
+	      DstBlock		      "BRwError"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "pmol/min to U/min"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		Points			[0, -75]
+		DstBlock		"Error Accuracy Bounded"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 145]
+		DstBlock		"Total insulin [U] instantaneous"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "BRin"
+	      SrcPort		      1
+	      DstBlock		      "pmol/min to U/min"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Quantizer
+	  Name			  "Basal Quantizer\n(increments)"
+	  SID			  4452
+	  Position		  [355, 110, 385, 140]
+	  ForegroundColor	  "blue"
+	  BackgroundColor	  "[0.000000, 1.000000, 1.000000]"
+	  NamePlacement		  "alternate"
+	  QuantizationInterval	  "hardware.pump_basal_inc"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Basal max/min"
+	  SID			  4453
+	  Ports			  [1, 1]
+	  Position		  [280, 110, 310, 140]
+	  ForegroundColor	  "blue"
+	  BackgroundColor	  "cyan"
+	  NamePlacement		  "alternate"
+	  UpperLimit		  "hardware.pump_basal_max"
+	  LowerLimit		  "hardware.pump_basal_min"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Bolus Delivery\nw/Error"
+	  SID			  4454
+	  Ports			  [1, 1]
+	  Position		  [480, 152, 560, 178]
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "Bolus Delivery\nw/Error"
+	    Location		    [373, 82, 1247, 389]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yi"
+	      SID		      4455
+	      Position		      [25, 28, 55, 42]
+	      BackgroundColor	      "cyan"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      4456
+	      Ports		      [2, 1]
+	      Position		      [540, 72, 570, 103]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      4457
+	      Position		      [320, 105, 340, 125]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      SID		      4458
+	      Position		      [200, 89, 275, 121]
+	      BackgroundColor	      "[0.925490, 0.972549, 0.654902]"
+	      Expr		      "rem(u(1),1)"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      4459
+	      Ports		      [2, 1]
+	      Position		      [315, 35, 345, 55]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "+-|"
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      SID		      4460
+	      Position		      [320, 150, 345, 230]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Criteria		      "u2 > Threshold"
+	      Threshold		      "1"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      SID		      4461
+	      Position		      [370, 28, 390, 132]
+	      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+	      Criteria		      "u2 > Threshold"
+	      Threshold		      "1"
+	      InputSameDT	      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "U to pmol again"
+	      SID		      4462
+	      Position		      [600, 73, 660, 107]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      Gain		      "6000"
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "accuracy bounded_1"
+	      SID		      4463
+	      Ports		      [1, 1]
+	      Position		      [420, 143, 475, 197]
+	      BackgroundColor	      "[0.701961, 0.850980, 0.423529]"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"accuracy bounded_1"
+		Location		[653, 391, 1474, 1036]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In_1"
+		  SID			  4464
+		  Position		  [70, 203, 100, 217]
+		  BackgroundColor	  "cyan"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "1U"
+		  SID			  4465
+		  Position		  [15, 25, 45, 55]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup mean"
+		  SID			  4466
+		  Position		  [130, 23, 170, 47]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_mean"
+		  LookUpMeth		  "Interpolation-Use End Values"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup mean1"
+		  SID			  4467
+		  Position		  [250, 198, 290, 222]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_mean"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup std dev/average"
+		  SID			  4468
+		  Position		  [120, 77, 140, 93]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_std2r"
+		  LookUpMeth		  "Interpolation-Use End Values"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product"
+		  SID			  4469
+		  Ports			  [4, 1]
+		  Position		  [265, 45, 300, 150]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		  Inputs		  "4"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  RandomNumber
+		  Name			  "Random\nNumber1"
+		  SID			  4470
+		  Position		  [90, 120, 120, 150]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum2"
+		  SID			  4471
+		  Ports			  [2, 1]
+		  Position		  [325, 200, 345, 220]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "++|"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Display
+		  Name			  "Total insulin [U]1"
+		  SID			  4472
+		  Ports			  [1]
+		  Position		  [370, 138, 470, 162]
+		  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+		  Decimation		  "1"
+		  Lockdown		  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out_1"
+		  SID			  4473
+		  Position		  [390, 203, 420, 217]
+		  BackgroundColor	  "red"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Product"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 50]
+		  Branch {
+		    DstBlock		    "Total insulin [U]1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Sum2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Lookup mean1"
+		  SrcPort		  1
+		  DstBlock		  "Sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "In_1"
+		  SrcPort		  1
+		  Points		  [115, 0]
+		  Branch {
+		    DstBlock		    "Lookup mean1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -75]
+		    DstBlock		    "Product"
+		    DstPort		    4
+		  }
+		}
+		Line {
+		  SrcBlock		  "1U"
+		  SrcPort		  1
+		  Points		  [30, 0]
+		  Branch {
+		    Points		    [0, 45]
+		    DstBlock		    "Lookup std dev/average"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -5]
+		    DstBlock		    "Lookup mean"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Sum2"
+		  SrcPort		  1
+		  DstBlock		  "Out_1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Random\nNumber1"
+		  SrcPort		  1
+		  Points		  [60, 0; 0, -25]
+		  DstBlock		  "Product"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Lookup std dev/average"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Lookup mean"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 25]
+		  DstBlock		  "Product"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "accuracy bounded_in"
+	      SID		      4474
+	      Ports		      [1, 1]
+	      Position		      [425, 52, 475, 108]
+	      BackgroundColor	      "[0.701961, 0.850980, 0.423529]"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"accuracy bounded_in"
+		Location		[537, 133, 1070, 540]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In"
+		  SID			  4475
+		  Position		  [25, 28, 55, 42]
+		  BackgroundColor	  "cyan"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup mean"
+		  SID			  4476
+		  Position		  [130, 23, 170, 47]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_mean"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Lookup
+		  Name			  "Lookup std dev/average"
+		  SID			  4477
+		  Position		  [125, 115, 160, 135]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  NamePlacement		  "alternate"
+		  InputValues		  "hardware.pump_accuracy_bolus_amount"
+		  Table			  "hardware.pump_bolus_std2r"
+		  LookUpMeth		  "Interpolation-Use End Values"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product"
+		  SID			  4478
+		  Ports			  [3, 1]
+		  Position		  [235, 85, 265, 165]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		  Inputs		  "3"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  RandomNumber
+		  Name			  "Random\nNumber1"
+		  SID			  4479
+		  Position		  [50, 135, 80, 165]
+		  BackgroundColor	  "[0.984314, 0.741176, 0.917647]"
+		  SampleTime		  "1"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Sum2"
+		  SID			  4480
+		  Ports			  [2, 1]
+		  Position		  [335, 85, 355, 105]
+		  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|++"
+		  InputSameDT		  off
+		  OutDataTypeMode	  "Inherit via internal rule"
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out"
+		  SID			  4481
+		  Position		  [380, 88, 410, 102]
+		  BackgroundColor	  "red"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "Sum2"
+		  SrcPort		  1
+		  DstBlock		  "Out"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In"
+		  SrcPort		  1
+		  Points		  [15, 0]
+		  Branch {
+		    DstBlock		    "Lookup mean"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 90]
+		    DstBlock		    "Lookup std dev/average"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Product"
+		  SrcPort		  1
+		  Points		  [75, 0]
+		  DstBlock		  "Sum2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Lookup mean"
+		  SrcPort		  1
+		  Points		  [20, 0]
+		  Branch {
+		    Points		    [105, 0; 0, 60]
+		    DstBlock		    "Sum2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 65]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Random\nNumber1"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Lookup std dev/average"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "pmol to U"
+	      SID		      4482
+	      Position		      [85, 14, 150, 56]
+	      BackgroundColor	      "[0.996078, 0.819608, 0.772549]"
+	      Gain		      "1/6000"
+	      ParameterDataTypeMode   "Inherit via internal rule"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ya"
+	      SID		      4483
+	      Position		      [690, 83, 720, 97]
+	      BackgroundColor	      "red"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      DstBlock		      "accuracy bounded_in"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, -20]
+	      DstBlock		      "accuracy bounded_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      Points		      [20, 0]
+	      Branch {
+		DstBlock		"Sum1"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, 60]
+		DstBlock		"Switch"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "accuracy bounded_1"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -75]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "accuracy bounded_in"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "U to pmol again"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "U to pmol again"
+	      SrcPort		      1
+	      DstBlock		      "ya"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "pmol to U"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		Points			[0, -20; 120, 0]
+		Branch {
+		  Points		  [0, 65]
+		  DstBlock		  "Switch1"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [40, 0]
+		  DstBlock		  "Sum1"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 70]
+		Branch {
+		  Points		  [0, 85; 90, 0]
+		  Branch {
+		    Points		    [0, 25]
+		    DstBlock		    "Switch"
+		    DstPort		    3
+		  }
+		  Branch {
+		    DstBlock		    "Switch"
+		    DstPort		    2
+		  }
+		}
+		Branch {
+		  DstBlock		  "Fcn"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "yi"
+	      SrcPort		      1
+	      DstBlock		      "pmol to U"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Quantizer
+	  Name			  "Bolus Quantizer\n(increments)"
+	  SID			  4484
+	  Position		  [395, 150, 425, 180]
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  QuantizationInterval	  "hardware.pump_bolus_inc"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Bolus max/min"
+	  SID			  4485
+	  Ports			  [1, 1]
+	  Position		  [310, 150, 340, 180]
+	  ForegroundColor	  "red"
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  UpperLimit		  "hardware.pump_bolus_max"
+	  LowerLimit		  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  4486
+	  Position		  [615, 127, 730, 143]
+	  BlockMirror		  on
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  Value			  "hardware.pump_noise"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  4487
+	  Position		  [760, 138, 875, 152]
+	  BlockMirror		  on
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  Value			  "hardware.pump_char"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  4488
+	  Ports			  [1, 2]
+	  Position		  [160, 106, 165, 184]
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  Outputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "basal"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "bolus"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  SID			  4504
+	  Ports			  [1, 1]
+	  Position		  [965, 245, 995, 275]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  SID			  4489
+	  Ports			  [1, 1]
+	  Position		  [225, 30, 255, 60]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Pump_pmol"
+	  SID			  4490
+	  Ports			  [1]
+	  Position		  [1010, 189, 1040, 221]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Floating		  off
+	  Location		  [1202, 185, 1915, 840]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "175"
+	  SaveName		  "ScopeData16"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  4491
+	  Ports			  [2, 1]
+	  Position		  [885, 130, 915, 150]
+	  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "+|+"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  SID			  4492
+	  Position		  [655, 15, 685, 45]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch2"
+	  SID			  4493
+	  Position		  [655, 217, 680, 263]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch3"
+	  SID			  4494
+	  Position		  [815, 25, 845, 55]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch4"
+	  SID			  4495
+	  Position		  [835, 227, 865, 293]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Criteria		  "u2 > Threshold"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Total insulin IN [U]"
+	  SID			  4496
+	  Ports			  [1]
+	  Position		  [350, 29, 420, 61]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Decimation		  "1"
+	  Lockdown		  off
+	}
+	Block {
+	  BlockType		  Display
+	  Name			  "Total insulin OUT [U]"
+	  SID			  4505
+	  Ports			  [1]
+	  Position		  [1090, 244, 1160, 276]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Decimation		  "1"
+	  Lockdown		  off
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  SID			  4497
+	  Position		  [970, 125, 1005, 155]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "basal_U/hr intoPUMP"
+	  SID			  4498
+	  Ports			  [1]
+	  Position		  [50, 54, 80, 86]
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Floating		  off
+	  Location		  [504, 74, 1217, 729]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "175"
+	  SaveName		  "ScopeData15"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "bolus_U_intoPUMP"
+	  SID			  4499
+	  Ports			  [1]
+	  Position		  [225, 249, 255, 281]
+	  BackgroundColor	  "[0.752941, 0.752941, 0.752941]"
+	  Floating		  off
+	  Location		  [504, 74, 1217, 729]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "0"
+	  YMax			  "175"
+	  SaveName		  "ScopeData5"
+	  DataFormat		  "StructureWithTime"
+	  LimitDataPoints	  off
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "pmol to U1"
+	  SID			  4500
+	  Position		  [275, 26, 330, 64]
+	  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+	  Gain			  "1/6000"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "pmol to U2"
+	  SID			  4501
+	  Position		  [188, 210, 212, 255]
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+	  NamePlacement		  "alternate"
+	  Gain			  "1/6000"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "pmol to U3"
+	  SID			  4506
+	  Position		  [1015, 241, 1070, 279]
+	  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+	  Gain			  "1/6000"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "pmol/min to U/hr"
+	  SID			  4502
+	  Position		  [110, 59, 170, 81]
+	  BlockMirror		  on
+	  BackgroundColor	  "[0.996078, 0.819608, 0.772549]"
+	  NamePlacement		  "alternate"
+	  Gain			  "1/100"
+	  ParameterDataTypeMode	  "Inherit via internal rule"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pump injection"
+	  SID			  4503
+	  Position		  [1050, 133, 1080, 147]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "pump injection"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pmol to U1"
+	  SrcPort		  1
+	  DstBlock		  "Total insulin IN [U]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  DstBlock		  "pmol to U1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Bolus max/min"
+	  SrcPort		  1
+	  DstBlock		  "Bolus Quantizer\n(increments)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "SQ [pmol per min]"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [19, 0]
+	  Branch {
+	    DstBlock		    "Zero-Order\nHold"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 65]
+	    Branch {
+	      DstBlock		      "Pump_pmol"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 55]
+	      DstBlock		      "Integrator1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  Name			  "basal"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [50, 0]
+	    Branch {
+	      DstBlock		      "Basal max/min"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -45; 475, 0; 0, -30]
+	      DstBlock		      "Switch3"
+	      DstPort		      3
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -55]
+	    Branch {
+	      Points		      [0, -25]
+	      DstBlock		      "Integrator2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "pmol/min to U/hr"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Basal max/min"
+	  SrcPort		  1
+	  DstBlock		  "Basal Quantizer\n(increments)"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "bolus"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [80, 0]
+	    Branch {
+	      DstBlock		      "Bolus max/min"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 115]
+	      DstBlock		      "Switch4"
+	      DstPort		      3
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "pmol to U2"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Bolus Quantizer\n(increments)"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [0, 90]
+	    DstBlock		    "Switch2"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "Bolus Delivery\nw/Error"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Basal Quantizer\n(increments)"
+	  SrcPort		  1
+	  Points		  [55, 0]
+	  Branch {
+	    Points		    [0, -85]
+	    DstBlock		    "Switch"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "Basal Delivery Rate\n w/ Error"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Basal Delivery Rate\n w/ Error"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -105]
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [-20, 0]
+	  Branch {
+	    Points		    [0, 0; 0, 105]
+	    DstBlock		    "Switch2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -105]
+	    DstBlock		    "Switch"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Bolus Delivery\nw/Error"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 60]
+	  DstBlock		  "Switch2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch2"
+	  SrcPort		  1
+	  DstBlock		  "Switch4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Switch3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [-13, 0]
+	  Branch {
+	    Points		    [0, 115]
+	    DstBlock		    "Switch4"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -105]
+	    DstBlock		    "Switch3"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Switch3"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch4"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "pmol to U2"
+	  SrcPort		  1
+	  Points		  [0, 5]
+	  DstBlock		  "bolus_U_intoPUMP"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pmol/min to U/hr"
+	  SrcPort		  1
+	  DstBlock		  "basal_U/hr intoPUMP"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pmol to U3"
+	  SrcPort		  1
+	  DstBlock		  "Total insulin OUT [U]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  DstBlock		  "pmol to U3"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "meal_announce_modifier"
+      SID		      4198
+      Ports		      [1, 1]
+      Position		      [1205, 777, 1300, 793]
+      BlockMirror	      on
+      BackgroundColor	      "[1.000000, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"meal_announce_modifier"
+	Location		[135, 207, 936, 678]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  4199
+	  Position		  [45, 63, 75, 77]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  4201
+	  Ports			  [1, 2]
+	  Position		  [130, 51, 135, 89]
+	  ShowName		  off
+	  Outputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  FromWorkspace
+	  Name			  "From\nWorkspace"
+	  SID			  4203
+	  Position		  [45, 21, 250, 39]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.501961]"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  VariableName		  "ctrller.meal_announce_modifier"
+	  SampleTime		  "0"
+	  Interpolate		  off
+	  ZeroCross		  on
+	  OutputAfterFinalValue	  "Holding final value"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  4202
+	  Ports			  [2, 1]
+	  Position		  [385, 27, 390, 98]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  SID			  4204
+	  Ports			  [2, 1]
+	  Position		  [305, 17, 335, 73]
+	  BackgroundColor	  "[1.000000, 0.501961, 0.501961]"
+	  ShowName		  off
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  4200
+	  Position		  [445, 58, 475, 72]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From\nWorkspace"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Product"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "mg CHO/kg 2 g Carbs"
+      SID		      4347
+      Position		      [695, 365, 725, 395]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      NamePlacement	      "alternate"
+      Gain		      "struttura.BW/1000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "o"
+      SID		      98
+      Position		      [515, 198, 530, 212]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "pmol to U"
+      SID		      100
+      Position		      [835, 600, 865, 630]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      Gain		      "1/6000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "pmol to U1"
+      SID		      4346
+      Position		      [590, 390, 620, 420]
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      Gain		      "1/6000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "pmol to U2"
+      SID		      4371
+      Position		      [430, 555, 460, 585]
+      BlockMirror	      on
+      BackgroundColor	      "[0.960784, 0.760784, 0.921569]"
+      Gain		      "1/6000"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "save blood glucose"
+      SID		      120
+      Ports		      [1]
+      Position		      [1175, 328, 1230, 352]
+      BackgroundColor	      "red"
+      NamePlacement	      "alternate"
+      VariableName	      "G"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "save measurable data"
+      SID		      121
+      Ports		      [1]
+      Position		      [1440, 355, 1500, 385]
+      BackgroundColor	      "red"
+      NamePlacement	      "alternate"
+      VariableName	      "measured"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "save model states"
+      SID		      122
+      Ports		      [1]
+      Position		      [1065, 207, 1150, 253]
+      BackgroundColor	      "red"
+      VariableName	      "model_states"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure With Time"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "save physiological states"
+      SID		      123
+      Ports		      [1]
+      Position		      [1160, 67, 1245, 113]
+      BackgroundColor	      "red"
+      VariableName	      "physio_states"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure With Time"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "save sensor readings"
+      SID		      1319
+      Ports		      [1]
+      Position		      [1215, 620, 1295, 640]
+      BlockRotation	      270
+      BlockMirror	      on
+      BackgroundColor	      "red"
+      ShowName		      off
+      VariableName	      "sensor"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "save time vector"
+      SID		      124
+      Ports		      [1]
+      Position		      [255, 737, 335, 763]
+      BackgroundColor	      "red"
+      NamePlacement	      "alternate"
+      VariableName	      "time"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Structure"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "start CL time"
+      SID		      169
+      Position		      [195, 592, 300, 618]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      Value		      "scenario.Tclosed"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "start sim ToD"
+      SID		      170
+      Position		      [1395, 805, 1515, 825]
+      BlockMirror	      on
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      Value		      "scenario.simToD"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "time of day"
+      SID		      2415
+      Ports		      [1, 1]
+      Position		      [1180, 799, 1320, 831]
+      BlockMirror	      on
+      BackgroundColor	      "[0.501961, 0.501961, 1.000000]"
+      LibraryVersion	      "1.762"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"time of day"
+	Location		[152, 207, 762, 626]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "minutes"
+	  SID			  2416
+	  Position		  [20, 53, 50, 67]
+	  BackgroundColor	  "cyan"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  SID			  2417
+	  Ports			  [2, 1]
+	  Position		  [330, 77, 360, 108]
+	  Inputs		  "+-"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  2418
+	  Position		  [20, 115, 50, 145]
+	  Value			  "1440"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide1"
+	  SID			  2419
+	  Ports			  [2, 1]
+	  Position		  [255, 82, 285, 113]
+	  ShowName		  off
+	  Inputs		  "**"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide2"
+	  SID			  2420
+	  Ports			  [2, 1]
+	  Position		  [125, 72, 155, 103]
+	  ShowName		  off
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Rounding
+	  Name			  "Rounding\nFunction1"
+	  SID			  2421
+	  Position		  [190, 75, 220, 105]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Matlab DT format"
+	  SID			  2422
+	  Position		  [430, 88, 460, 102]
+	  BackgroundColor	  "red"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "minutes"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, 20]
+	    DstBlock		    "Divide2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -15; 245, 0]
+	    DstBlock		    "Add"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Divide2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 5; 170, 0]
+	    DstBlock		    "Divide1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Divide2"
+	  SrcPort		  1
+	  DstBlock		  "Rounding\nFunction1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Rounding\nFunction1"
+	  SrcPort		  1
+	  DstBlock		  "Divide1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Divide1"
+	  SrcPort		  1
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  DstBlock		  "Matlab DT format"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload IV glucose "
+      SID		      171
+      Position		      [175, 322, 285, 348]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      VariableName	      "scenario.IV_glucose"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload IV insulin"
+      SID		      172
+      Position		      [195, 412, 305, 438]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      VariableName	      "scenario.IV_insulin"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload Open loop \ninsulin regimen"
+      SID		      173
+      Position		      [195, 502, 300, 528]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      VariableName	      "scenario.SQ_insulin"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload SQ Glucagon"
+      SID		      3175
+      Position		      [195, 52, 305, 78]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      VariableName	      "scenario.SQ_Gluc"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload SQ Pramlantide"
+      SID		      2880
+      Position		      [195, 142, 310, 168]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      VariableName	      "scenario.SQ_Pram"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload carbs intake"
+      SID		      174
+      Position		      [195, 240, 280, 270]
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      VariableName	      "scenario.meals"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      FromWorkspace
+      Name		      "upload meal announcement"
+      SID		      175
+      Position		      [1370, 775, 1510, 795]
+      BlockMirror	      on
+      BackgroundColor	      "[0.501961, 1.000000, 0.501961]"
+      NamePlacement	      "alternate"
+      VariableName	      "scenario.meal_announce"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[110, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 95]
+	DstBlock		"save time vector"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "upload carbs intake"
+      SrcPort		      1
+      Points		      [205, 0]
+      Branch {
+	Points			[0, -70; 195, 0]
+	DstBlock		"Mux2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Sum3"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "upload Open loop \ninsulin regimen"
+      SrcPort		      1
+      DstBlock		      "U to pmol"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "start CL time"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [10, 0; 0, -80; 35, 0]
+      Branch {
+	DstBlock		"Switch_closed loop"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -90]
+	Branch {
+	  DstBlock		  "Switch_closed loop1"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, -90; 40, 0]
+	  Branch {
+	    Points		    [40, 0]
+	    Branch {
+	      DstBlock		      "Switch_closed loop2"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -130]
+	      DstBlock		      "Switch_closed loop3"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -180]
+	    Branch {
+	      DstBlock		      "Switch_closed loop4"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -90]
+	      DstBlock		      "Switch_closed loop5"
+	      DstPort		      2
+	    }
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "U to pmol"
+      SrcPort		      1
+      DstBlock		      "Switch_closed loop"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "insulin pump"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"Human Model"
+	DstPort			6
+      }
+      Branch {
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 90]
+	Branch {
+	  DstBlock		  "To Workspace1"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "pmol to U"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Switch_closed loop"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 45]
+	Branch {
+	  DstBlock		  "To Workspace6"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "pmol to U2"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	DstBlock		"insulin pump"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      1
+      Points		      [-30, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"To Workspace3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      Points		      [-55, 0; 0, -235]
+      DstBlock		      "Switch_closed loop"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "start sim ToD"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "time of day"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Human Model"
+      SrcPort		      1
+      Points		      [100, 0]
+      Branch {
+	DstBlock		"save physiological states"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 55; 290, 0; 0, 200]
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Human Model"
+      SrcPort		      2
+      DstBlock		      "save model states"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Human Model"
+      SrcPort		      4
+      DstBlock		      "glucose sensor"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "upload IV glucose "
+      SrcPort		      1
+      DstBlock		      "g CHO/min  to mg CHO/kg/min"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "upload IV insulin"
+      SrcPort		      1
+      DstBlock		      "U/min to pmol/min"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "glucose sensor"
+      SrcPort		      1
+      DstBlock		      "Sensor selector"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sensor selector"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	Points			[0, -85]
+	DstBlock		"Mux1"
+	DstPort			2
+      }
+      Branch {
+	Points			[20, 0; 0, 85]
+	Branch {
+	  Points		  [-115, 0]
+	  Branch {
+	    Points		    [-145, 0]
+	    DstBlock		    "Mux3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "save sensor readings"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  Points		  [0, 190]
+	  DstBlock		  "STD_Treat_v3_2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [-605, 0; 0, 475; 1055, 0; 0, -35]
+      DstBlock		      "STD_Treat_v3_2"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "save measurable data"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "U/min to pmol/min"
+      SrcPort		      1
+      DstBlock		      "Switch_closed loop1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "g CHO/min  to mg CHO/kg/min"
+      SrcPort		      1
+      DstBlock		      "Switch_closed loop2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Switch_closed loop1"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	Points			[165, 0]
+	Branch {
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Human Model"
+	  DstPort		  5
+	}
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"pmol to U1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      3
+      Points		      [-410, 0; 0, -360]
+      DstBlock		      "Switch_closed loop1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"g to mg"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 50]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Mux2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Switch_closed loop3"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Sum3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "o"
+      SrcPort		      1
+      DstBlock		      "Switch_closed loop3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "glucose sensor"
+      SrcPort		      2
+      DstBlock		      "Sensor selector"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Clock1"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      2
+      Points		      [-85, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"To Workspace4"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      4
+      Points		      [-420, 0; 0, -475]
+      DstBlock		      "Switch_closed loop2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      5
+      Points		      [-435, 0; 0, -630]
+      DstBlock		      "Switch_closed loop3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "time of day"
+      SrcPort		      1
+      DstBlock		      "STD_Treat_v3_2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "pmol to U"
+      SrcPort		      1
+      DstBlock		      "INJ, U"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "upload SQ Pramlantide"
+      SrcPort		      1
+      DstBlock		      "Switch_closed loop4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      6
+      Points		      [-450, 0; 0, -705]
+      DstBlock		      "Switch_closed loop4"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Switch_closed loop4"
+      SrcPort		      1
+      Points		      [165, 0]
+      Branch {
+	DstBlock		"Human Model"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -45]
+	Branch {
+	  Points		  [-625, 0; 0, 835; 1140, 0; 0, -80]
+	  DstBlock		  "STD_Treat_v3_2"
+	  DstPort		  5
+	}
+	Branch {
+	  DstBlock		  "Pramlintide"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "CHO"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Switch_closed loop5"
+      SrcPort		      1
+      Points		      [45, 0]
+      Branch {
+	Points			[120, 0]
+	Branch {
+	  DstBlock		  "Human Model"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -65; 835, 0; 0, 945; -295, 0; 0, -110]
+	  DstBlock		  "STD_Treat_v3_2"
+	  DstPort		  4
+	}
+      }
+      Branch {
+	Points			[0, -35]
+	DstBlock		"SQ_Glucagon"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "STD_Treat_v3_2"
+      SrcPort		      7
+      Points		      [-470, 0; 0, -820]
+      DstBlock		      "Switch_closed loop5"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "upload SQ Glucagon"
+      SrcPort		      1
+      DstBlock		      "Switch_closed loop5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "g to mg"
+      SrcPort		      1
+      DstBlock		      "Human Model"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Switch_closed loop2"
+      SrcPort		      1
+      Points		      [60, 0]
+      Branch {
+	DstBlock		"Human Model"
+	DstPort			4
+      }
+      Branch {
+	Points			[0, 35]
+	DstBlock		"mg CHO/kg 2 g Carbs"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "meal_announce_modifier"
+      SrcPort		      1
+      DstBlock		      "STD_Treat_v3_2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "upload meal announcement"
+      SrcPort		      1
+      DstBlock		      "meal_announce_modifier"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Human Model"
+      SrcPort		      3
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 110; 55, 0]
+	Branch {
+	  DstBlock		  "Mux3"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "glucose sensor"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[75, 0]
+	Branch {
+	  DstBlock		  "G"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [80, 0]
+	  Branch {
+	    DstBlock		    "save blood glucose"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [65, 0; 0, 80]
+	    DstBlock		    "Sensor selector"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      DstBlock		      "IVBG_Sensor"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pmol to U1"
+      SrcPort		      1
+      DstBlock		      "IV_Insulin"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "mg CHO/kg 2 g Carbs"
+      SrcPort		      1
+      DstBlock		      "IV_Glucose"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "pmol to U2"
+      SrcPort		      1
+      Points		      [-15, 0]
+      DstBlock		      "SQ_Insulin"
+      DstPort		      1
+    }
+    Annotation {
+      Position		      [601, 540]
+    }
+    Annotation {
+      Position		      [594, 565]
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.5 (R2010a) dated Jan 19 2010, 18:40:00
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "testing_platform"
+    created		    "19-Jun-2007 10:29:46"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    75014000
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    codeFlags		    ""
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

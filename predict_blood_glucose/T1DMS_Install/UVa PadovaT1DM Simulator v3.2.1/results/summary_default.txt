@@ -1,0 +1,3 @@
+ID	mean BG	percent below target	percent above target	percent within target	risk index	
+adolescent#001	203.70	0.00	100.00	0.00	NaN	
+adolescent#001	198.75	0.00	100.00	0.00	NaN	

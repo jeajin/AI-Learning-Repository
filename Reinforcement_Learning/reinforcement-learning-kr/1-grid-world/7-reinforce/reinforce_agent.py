@@ -12,7 +12,7 @@ EPISODES = 2500
 # 그리드월드 예제에서의 REINFORCE 에이전트
 class ReinforceAgent:
     def __init__(self):
-        self.load_model = False
+        self.load_model = True
         # 가능한 모든 행동 정의
         self.action_space = [0, 1, 2, 3, 4]
         # 상태와 행동의 크기 정의
@@ -59,6 +59,7 @@ class ReinforceAgent:
     # 정책신경망으로 행동 선택
     def get_action(self, state):
         policy = self.model.predict(state)[0]
+        print(policy)
         return np.random.choice(self.action_size, 1, p=policy)[0]
     
     # 반환값 계산
@@ -109,6 +110,7 @@ if __name__ == "__main__":
             action = agent.get_action(state)
             # 선택한 행동으로 환경에서 한 타임스탭 진행 후 샘플 수집
             next_state, reward, done = env.step(action)
+            print(reward)
             next_state = np.reshape(next_state, [1, 15])
 
             agent.append_sample(state, action, reward)

@@ -1,0 +1,19 @@
+INSULET PUMP PARAMETERS
+
+These two parameters indicate a Complex Pump when both noise & char = 1
+see the pump module in the simulink model
+pump is governed by injections every 2 minutes with added error and noise
+%pump_noise=1;
+%pump_char=1;
+
+%minbolus=0
+%maxbolus=30
+%incbolus=0.05
+%minbasal=0
+%maxbasal=30
+%incbasal=0.05
+%sampling=1
+
+%accuracy_bolus_amount=[0 0.05 0.1 0.2 1 35]
+%bolus_mean = [0 0.04965 0.9991 0.2 1.001 35]
+%bolus_std2r= [0.12 0.12 0.08 0.0633  0.04  0]

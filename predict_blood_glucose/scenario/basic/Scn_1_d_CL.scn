@@ -1,0 +1,49 @@
+scn test file for scenario
+
+
+TIME OF SIMULATION INFO
+One day Model Run Time and Midnight Time 0f Day Start
+%Tsimul=31
+%QTsimul=hour
+%simToD=0
+
+Initial BG Value
+BGinit not specified USE DEFAULT subject specific fasting
+%BGinit=112.5
+
+closed loop info - start at day ZERO
+%Tclosed=2
+%QTclosed=hour
+%Treg=0
+
+meals info_ 3 Meals 
+%Tmeals=[[7 12 19] 24+[7 12 19] 48+[7 12 19] 72+[7 12 19]]
+%QTmeals=hour
+%Ameals=[40 50 70 40 50 70 40 50 70 40 50 70]
+
+%Dmeals=[15]
+%Qmeals=total
+
+Open loop SQ insulin info
+%Qbasal=quest
+%OB=on
+
+
+Open loop SQ insulin info NOT SPECIFIED
+CR DEFAULT on off not necessary covered by OB on
+%CR=on
+Qbasal quest controls
+basal= 
+OB on sets/over rides
+Tbolus=
+QTbolus=
+
+Open loop insulin IV Injection info NOT SPECIFIED NA
+TIVINS
+QIVINS
+AIVINS
+
+Open loop dextrose IV Injection info NOT SPECIFIED NA
+TIVD
+QIVD
+AIVD

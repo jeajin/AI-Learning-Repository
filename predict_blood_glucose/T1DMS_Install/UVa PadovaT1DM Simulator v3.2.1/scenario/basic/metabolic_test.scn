@@ -1,0 +1,25 @@
+metabolic test file scenario example
+only info for the last subject simulated is available in metab_resluts
+THE FIRST LINE MUST BE "%" TO BE READ
+
+Simulation Info
+%Tsimul=12
+%QTsimul=hour
+%simToD=0
+
+Closed Loop Info - greater than Tsimul for metabolic testing
+%Tclosed=24
+%QTclosed=hour
+
+Meals Info
+%Tmeals=[2]
+%QTmeals=hour
+%Ameals=[60]
+%Qmeals=total
+
+Basal info
+%Qbasal=quest
+
+Bolus info
+%OB=on
+

@@ -1,0 +1,20 @@
+COZMO PUMP PARAMETERS
+
+These two parameters indicate a Simple Pump when noise=1 & char=0
+No Error Noise added; controlled by min, max & incremental settings
+%pump_noise=0;
+%pump_char=1;
+
+%minbolus=0
+%maxbolus=75
+%incbolus=0.05
+%minbasal=0
+%maxbasal=35
+%incbasal=0.05
+%sampling=1
+
+FOLLOWING NOT USED in OUTPUT with pump_noise=0
+pump_noise = 0 ==> (error + random noise) ARE NOT ADDED
+%accuracy_bolus_amount=[0 100]
+%bolus_mean = [0 100]
+%bolus_std2r= [0 0]

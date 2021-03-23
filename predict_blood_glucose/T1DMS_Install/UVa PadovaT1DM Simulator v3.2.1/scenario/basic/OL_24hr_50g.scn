@@ -1,0 +1,27 @@
+test file for scenario
+CL_24hr_50g
+
+simulation info
+%Tsimul=24
+%QTsimul=hour
+
+
+%simToD=0
+closed loop info
+
+%Tclosed=48
+%QTclosed=hour
+
+%OB=on
+
+meals info
+%Tmeals=[6]
+%QTmeals=hour
+%Ameals=[50]
+%Qmeals=total
+
+
+%Qbasal=quest
+
+
+

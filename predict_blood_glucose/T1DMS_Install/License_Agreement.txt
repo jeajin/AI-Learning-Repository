@@ -1,0 +1,65 @@
+﻿SOFTWARE LICENSE AGREEMENT
+UVa/Padova T1DM Simulator S2013 - The Distributed Version:
+
+This Agreement between ARDx Informatics, Inc., dba The Epsilon Group, (“TEG”) with a principal place of business at 2000 Holiday Drive, Charlottesville, VA 22901and  Licensee. 
+
+	1  BACKGROUND
+TEG has certain rights to Software (defined below) for a Computer Simulation Environment for In Silico Testing of Continuous Glucose Monitoring and Optimal Metabolic Control in Diabetes, the “Simulator”, which was developed by Drs. Boris Kovatchev and colleagues at the University of Virginia (“UVA”) and Dr. Adrian Vella at the Mayo Foundation for Medical Education and Research (“MAYO”). Licensee would like to use the Software for its own internal use to test its own glucose monitoring control algorithms. TEG wishes to grant Licensee a non-exclusive, internal use license to the Software.
+
+	2  DEFINITIONS
+2.1   “Enhancements” means any changes to, improvements of, and derivative works of the Software (as derivative works are defined by the U.S. Copyright Laws at 17 U.S.C. §101) made by Licensee.
+2.2   “Licensed Field of Use” means internal research activities for the testing of glucose monitoring control algorithms. Without limitation, all uses in human diagnostics or treatment are expressly excluded.  The Software may not be transferred or sublicensed.
+2.3   “Software” means the source code and binary files for the training version of the UVa/Padova T1DM Simulator, provided to Licensee pursuant to this Agreement, including all Enhancements as further defined in 2.1 above and 3.3 below.  The training version of the Simulator is designed only for testing of control algorithms and not intended for the collection of data to be submitted to the FDA.  The Software includes the Simulator user's guide and any other material designed for the use in conjunction with the Software, provided to Licensee pursuant to this Agreement.  Both parties agree that any control algorithms developed by Licensee that are not Enhancements shall be owned by Licensee and not considered Software.
+2.4    “Licensed Patents” means PCT application PCT/US2008/067725, all U.S. patent applications directly or indirectly claiming priority to the same, including divisionals, equivalent continuations, and claims in continuations-in-part applications that are entitled to the priority filing date of any of the above-referenced U.S. patents or applications, as well as foreign equivalents of same, and all patents issuing therefrom, including reissues and re-examinations.
+2.5    “Site” means servers that are owned and operated by Licensee, for use by Licensee's employees or students. 
+
+	3   GRANT
+3.1    Grant.  Subject to the terms and conditions of this Agreement, TEG grants Licensee a nonexclusive license to use, copy, and modify Software, but only in the Licensed Field of Use, and only at the specified Site.  However, such license expressly excludes, without limitation, any right to (i) distribute Software by sale or other transfer of ownership, or by rental, lease, lending or license; and (ii) the transfer of beneficial use of Software or Enhancements, including without limitation, by internet access, public display, and by internal use by Licensee on behalf of customers.  
+3.2    Patents.  TEG does not grant any licenses under any Licensed Patents by this Agreement.  TEG does covenant that, for the term of this Agreement, it will not assert against Licensee a claim that the Software or its use in the Licensed Field of Use, in accordance with any user's guide or other material provided with the Software, infringes any Licensed Patent. Licensee acknowledges that this covenant is not binding on any other party that may have any interest in any such Licensed Patent, including any licensee of TEG's patent interests, nor is it intended to restrict TEG's right to assert claims outside the Licensed Field of Use.
+3.3    Enhancements.  TEG owns any Enhancements to the Software made by or for Licensee.  Licensee hereby assigns all its right, title and interest to any Enhancements to TEG.  Licensee will cause its employees and contractors to execute a similar assignment to TEG to the extent necessary.  Enhancements otherwise are considered “Software” for purposes of this Agreement. Licensee will deliver a copy of all Enhancements to TEG upon its release, or upon TEG's request.
+3.4    Term.  The license in Section 3.1 will be perpetual unless earlier terminated under Section 9 of this Agreement.
+
+	4   LICENSEE OBLIGATIONS
+Marking and Protection.  Licensee will not alter any copyright or proprietary rights notices in the Software, and will include an appropriate notice of copyright (“© 2013 The University of Virginia”) within the Software.
+
+	5  CONFIDENTIALITY
+Licensee acknowledges that the Software, including its source code, is valuable confidential information that is proprietary to TEG. Licensee therefore agrees to protect the source code for the Software and other confidential information disclosed to Licensee from disclosure to third parties by exercising due care to at least the degree Licensee exercises care in protecting its own proprietary information (“Confidential Information”).  Confidential Information does not include:
+(A) Information which is already in the public domain at the time of disclosure; or 
+(B) Information which after lawful disclosure becomes a part of the public domain; or 
+(C) Information received by Licensee from a third-party without an obligation of confidentiality; or 
+(D) Information that TEG agrees may be disclosed.  
+
+	6  PAYMENTS
+  Payment shall have been received by The Epsilon Group prior to software installation.
+
+	7  INDEMNITY AND DISCLAIMERS
+7.1    Licensee Indemnification.  Licensee agrees to indemnify, hold harmless and defend TEG, UVA and MAYO against any and all claims arising from Licensee's exercise of any rights under this Agreement, except for those claims which were dependent upon the gross negligence or willful misconduct by UVA, MAYO or TEG, including without limitation, against any damages, losses or liabilities whatsoever for death, injury to person, damage to property, business disruption, financial loss, or for the infringement of third party intellectual property rights, as a result of the development, design, promotion, possession, operation, or other disposition of the Software or any Enhancements by Licensee [and its affiliates (if applicable)].  As used in this paragraph, “UVA”, “MAYO” and “TEG” include their officers, trustees, personnel, agents, employees, students, successors and assigns.  “Licensee” includes any and all of its parents, assigns, successors, officers, trustees, personnel, agents, and employees. Licensee acknowledges that the technology embodied in the rights licensed hereunder is experimental and agrees to take all reasonable precautions to prevent death, personal injury, illness and property damage.  
+7.2    Disclaimers.  Nothing in this Agreement shall be construed as (i) a warranty or representation by TEG as to the validity or scope of any Software; (ii) a warranty or representation that anything developed, used or promoted under any license granted in this Agreement does not or will not infringe patents, copyrights, trademarks, trade secrets or other proprietary rights of third parties; (iii) an obligation to bring or prosecute actions or suits against third parties for infringement; (iv) conferring the right to use in advertising, publicity or otherwise any trademark, trade name, or names, or any contraction, abbreviation, simulation or adaptation thereof of Licensee, MAYO, UVA or TEG; (v) any other representations or warranties, either express or implied, unless specified in this Agreement; (vi) directly or indirectly operating or applying as a waiver of sovereign immunity by the Commonwealth of Virginia; or (vii) imposing any obligation or any liability on any party contrary to the laws of the Commonwealth of Virginia.  ALL RIGHTS ARE LICENSED HEREUNDER “AS IS.” TEG DISCLAIMS AND MAKES NO EXPRESS OR IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO THE SOFTWARE, OR ANY ENHANCEMENTS.
+
+	8  FOUNDATION NAMES AND MARKS
+Licensee will not identify TEG in any promotional statement, or otherwise use the name of any UVA or MAYO faculty member, employee, or student, or any trademark, service mark, trade name, or symbol of UVA or MAYO, unless TEG's prior written consent has been given.  Permission may be withheld at TEG's sole discretion.
+
+	9  TERMINATION
+9.1    Termination by Licensee.  Licensee may terminate this Agreement by giving TEG written notice at least thirty (30) days in advance of the effective date of termination selected by Licensee.
+9.2    Termination by TEG.
+	(A) TEG may also terminate this Agreement if Licensee is in material breach of any provision hereof.
+	(B) Termination under this Section 9.2 will take effect thirty (30) days after written notice by TEG unless Licensee remedies the breach within that thirty (30) day period.
+9.3     Surviving Provisions.  Surviving any termination or expiration are:
+	(A) Any claim of Licensee or TEG, accrued or to accrue, because of any breach or default by the other party; and
+	(B) The provisions of Articles 5 and 7 and any other provision that by its nature is intended to survive.
+
+	10  ASSIGNMENT
+This Agreement may not be assigned by Licensee without the prior written consent of TEG, which shall not be unreasonably withheld.
+
+	11  ARBITRATION
+11.1  Dispute Resolution by Arbitration.  Any dispute between the parties, other than disputes about copyright validity or infringement arising under this Agreement, will be settled by arbitration in accordance with the rules of the American Arbitration Association.  
+11.2  Request for Arbitration.  Either party may request such arbitration.  TEG and Licensee will mutually agree in writing on a third party arbitrator within thirty (30) days of the arbitration request.  The arbitrator's decision will be final and nonappealable and may be entered in any court having jurisdiction.
+	  
+	12  NOTICES
+All notices under this Agreement are deemed fully given when the software is downloaded by this installer.  A fully executed copy of INTERNAL USE SOFTWARE LICENSE AGREEMENT should have been transmitted to The Epsilon Group with payment.
+
+	13  MISCELLANEOUS
+13.1 Waiver.  No term of this Agreement can be waived except by the written consent of the party waiving compliance.
+13.2 Headings.  No headings in this Agreement affect its interpretation.
+13.3 Entire Agreement.  The parties hereto acknowledge that this Agreement sets forth the entire agreement and understanding of the parties hereto as to the subject matter hereof, and supersedes any and all prior written and oral agreements, understandings, promises or offers, including without limitation any term sheet which preceded its drafting, and shall not be subject to any change or modification except by the execution of a written instrument subscribed to by the parties hereto and explicitly referencing this Agreement and specifying that it is the parties' intent to modify the terms and/or conditions set forth herein.  The parties acknowledge that invoices, purchase orders or other mechanisms for administering any payment or other obligation set forth herein shall not contain terms and conditions separate from, in addition to, and/or in conflict with this Agreement, and that any such terms, if present, shall be void and without effect, and shall not be enforceable by any party hereto.  The initial     drafting of this Agreement by TEG was for the convenience of both parties, and both parties agree that such fact shall not result in any of the above clauses being construed against TEG should such clauses become in dispute.
+TEG should such clauses become in dispute.(Revision 30-Oct-2019)

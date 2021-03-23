@@ -1,0 +1,13 @@
+%Tsimul=4
+%QTsimul=day
+%simToD=0
+%Tclosed=48
+%QTclosed=hour
+%Treg=2880
+%Tmeals=[7 12 18 22 31 36 42 46 55 60 66 70 79 84 90 94]
+%QTmeals=hour
+%Ameals=[45 70 80 20 45 70 80 20 45 70 80 20 45 70 80 20]
+%Dmeals=[15] 
+%Qmeals=total
+%Qbasal=quest
+%OB=on

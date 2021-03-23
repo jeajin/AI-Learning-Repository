@@ -1,0 +1,7 @@
+Generic Fingerstick SMBG
+
+%SensorType=2
+
+%sampling=10
+%min=20
+%max=600

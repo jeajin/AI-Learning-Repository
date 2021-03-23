@@ -1,0 +1,18 @@
+COMPLEX PUMP PARAMETERS
+
+These two parameters indicate a Complex Pump when both noise & char = 1
+see the pump module in the simulink model
+pump is governed by injections every 2 minutes with added error and noise
+%pump_noise=1;
+%pump_char=1;
+
+%minbolus=0.0
+%maxbolus=75
+%incbolus=0.05
+%minbasal=0.0
+%maxbasal=25
+%incbasal=0.025
+%sampling=1
+%accuracy_bolus_amount=[0 0.05 0.1 0.25 0.5 1 35 75]
+%bolus_mean = [0 0.05 0.1 0.25 0.5 1.0 35 75]
+%bolus_std2r= [0.15 0.1 0.06  0.05 0.04 0.033 0 0]

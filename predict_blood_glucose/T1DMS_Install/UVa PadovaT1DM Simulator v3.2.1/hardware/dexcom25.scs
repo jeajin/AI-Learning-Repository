@@ -1,0 +1,14 @@
+Dexcom sensor
+as PACF goes down, error goes down
+
+%SensorType=1
+
+%PACF=0.25
+%type=SU
+%gamma=-0.5444
+%lambda=15.9574
+%delta=1.6898
+%xi=-5.47
+%sampling=5
+%min=39
+%max=600

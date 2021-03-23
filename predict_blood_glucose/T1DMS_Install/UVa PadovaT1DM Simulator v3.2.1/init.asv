@@ -1,0 +1,9 @@
+%Simulator()
+
+%@(hObject,eventdata)Simulator('run_Callback',hObject,eventdata,guidata(hObject))
+
+%run_Callback()
+
+load test_data
+run_Callback(hObject, eventdata, handles)
+

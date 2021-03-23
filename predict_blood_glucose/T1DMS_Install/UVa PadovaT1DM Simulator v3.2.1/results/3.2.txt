@@ -1,0 +1,2 @@
+ID	Mean BG	% time < TGT-low	% time in Target	% time > TGT-high	BG Risk Index (BGRI)	
+adolescent#001	99.82	0.00	100.00	0.00	NaN	

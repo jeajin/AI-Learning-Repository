@@ -17,7 +17,7 @@ class DeepSARSAgent:
         # 에이전트가 가능한 모든 행동 정의
         self.action_space = [0, 1, 2, 3, 4]
         # 상태의 크기와 행동의 크기 정의
-        self.action_size = len(self.action_space)
+        self.action_size = 5
         self.state_size = 15
         self.discount_factor = 0.99
         self.learning_rate = 0.001
@@ -34,8 +34,8 @@ class DeepSARSAgent:
     # 상태가 입력 큐함수가 출력인 인공신경망 생성
     def build_model(self):
         model = Sequential()
-        model.add(Dense(30, input_dim=self.state_size, activation='relu'))
-        model.add(Dense(30, activation='relu'))
+        model.add(Dense(5, input_dim=self.state_size, activation='relu'))
+        model.add(Dense(5, activation='relu'))
         model.add(Dense(self.action_size, activation='linear'))
         model.summary()
         model.compile(loss='mse', optimizer=Adam(lr=self.learning_rate))
@@ -59,16 +59,19 @@ class DeepSARSAgent:
         state = np.float32(state)
         next_state = np.float32(next_state)
         target = self.model.predict(state)[0]
+        # print(target)
         # 살사의 큐함수 업데이트 식
         if done:
             target[action] = reward
         else:
             target[action] = (reward + self.discount_factor *
                               self.model.predict(next_state)[0][next_action])
-
+        # print(target)
         # 출력 값 reshape
         target = np.reshape(target, [1, 5])
         # 인공신경망 업데이트
+        # print(target)
+        # print()
         self.model.fit(state, target, epochs=1, verbose=0)
 
 
@@ -106,6 +109,7 @@ if __name__ == "__main__":
 
             if done:
                 # 에피소드마다 학습 결과 출력
+                print(score)
                 scores.append(score)
                 episodes.append(e)
                 pylab.plot(episodes, scores, 'b')

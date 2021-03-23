@@ -1,0 +1,25 @@
+test file for scenario
+
+simulation info
+%Tsimul=12
+%QTsimul=hour
+
+
+%simToD=0
+closed loop info
+
+%Tclosed=0
+%QTclosed=min
+
+
+meals info
+%Tmeals=[30]
+%QTmeals=hour
+%Ameals=[50]
+%Qmeals=total
+
+
+%Qbasal=quest
+
+
+

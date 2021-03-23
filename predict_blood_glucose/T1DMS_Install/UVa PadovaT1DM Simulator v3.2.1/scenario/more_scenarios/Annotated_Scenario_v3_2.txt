@@ -1,0 +1,61 @@
+An ANNOTATED Scenario File
+Note: “*” Indicates default values 
+Note: “%” Required for variables to be read, NOT => comment
+
+TIME_of_Simulation_Information
+Tsimul  	Model Run Time – in QTsimul units
+%Tsimul=1440
+QTsimul  	Tsimul Units – min*, hour, day
+%QTsimul=min
+simToD   	Time of Day at start of sim – 0* _in minutes after midnight
+%simToD=0
+
+Initial Blood Glucose Value in mg/dl
+BGinit NOT SPECIFIED* => subject specific fasting BG _ or Specify in mg/dl 
+Such as this example: %BGinit=[100]
+
+MEALS INFO _ Timing, Amount Carbs in total or perkg, Duration of meals
+Tmeals	Time of Meals VECTOR in time after start of simulation
+%Tmeals=[[8 12 19 23]
+QTmeals	Tmeals unit – min*, hour, day
+%QTmeals=hour
+Meal_Amounts VECTOR matching_Tmeals_CARBS in Total grams or grams perKG BW
+%Ameals=[40 60 80 10]
+DURATION of meals_Fixed* minutes(15*) or Dmeals VECTOR to match Tmeals
+%Dmeals=[15]
+Qmeals is Ameals Unit_total g cho or g/perKg body weight _ total* or perkg
+%Qmeals=total
+
+START CLOSED LOOP TREATMENT
+Time after start of sim in QTclosed units – min*, hour, day
+%Tclosed=0
+%QTclosed=hour
+
+START REGULATION _Time past start of the simulation in minutes
+REGULATION => data is included in analysis calcs of results data
+Built-in Data Analysis
+%Treg=0
+
+OPEN_LOOP Basal injections
+basal Fixed _ set "basal=[XX]" – Units of Insulin per minute
+Qbasal quest _ quest uses subject-specific basal rate (overrides basal=)
+%Qbasal=quest
+
+OPEN_LOOP SQ insulin BOLUS Treatment
+OB on will use subject-specific Unit Insulin/g CHO to compute meal bolus
+%OB=on
+User specified Boluses - OB on set will over ride any Abolus info
+Abolus	Vector of bolus amounts in Units of Insulin (total or perkg) 
+Tbolus	Time_Vector of bolus injections in QTbolus units
+QTbolus	Tbolus Units – min*, hour, day
+Qbolus  Units of Bolus: 'total' Units Insulin or 'perkg' U/Kg body weight
+
+OPEN LOOP INSULIN INJECTION INFO – IV  * defaults to zero
+TIVINS	Time_Vector - IV insulin injection begin & end times in minutes
+QIVins	Dosage Units - IV insulin: 'perkg' b.w. or total 'total'
+AIVINS	a vector of IV insulin injection rates (U of insulin per minute)
+
+OPEN LOOP DEXTROSE INJECTION INFO – IV  * defaults to zero
+TIVD	Time_Vector of IV dextrose injection begin & end times in minutes
+QIVD 	units IVdextrose injection:per kg of weight ('perkg') or ('total')
+AIVD 	a vector of IV dextrose injection rates (grams of CHO)

@@ -14,7 +14,7 @@ EPISODES = 300
 # 카트폴 예제에서의 DQN 에이전트
 class DQNAgent:
     def __init__(self, state_size, action_size):
-        self.render = False
+        self.render = True
         self.load_model = False
 
         # 상태와 행동의 크기 정의
@@ -35,7 +35,7 @@ class DQNAgent:
 
         # 모델과 타깃 모델 생성
         self.model = self.build_model()
-        self.target_model = pythonself.build_model()
+        self.target_model = self.build_model()
 
         # 타깃 모델 초기화
         self.update_target_model()
@@ -112,7 +112,10 @@ if __name__ == "__main__":
     # CartPole-v1 환경, 최대 타임스텝 수가 500
     env = gym.make('CartPole-v1')
     state_size = env.observation_space.shape[0]
+    print(state_size)
+
     action_size = env.action_space.n
+    print(action_size)
 
     # DQN 에이전트 생성
     agent = DQNAgent(state_size, action_size)
@@ -134,6 +137,7 @@ if __name__ == "__main__":
             action = agent.get_action(state)
             # 선택한 행동으로 환경에서 한 타임스텝 진행
             next_state, reward, done, info = env.step(action)
+            print(done)
             next_state = np.reshape(next_state, [1, state_size])
             # 에피소드가 중간에 끝나면 -100 보상
             reward = reward if not done or score == 499 else -100

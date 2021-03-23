@@ -1,0 +1,31 @@
+scn test file for scenario
+
+
+
+TIME OF SIMULATION INFO
+One day Model Run Time and Midnight Time 0f Day Start
+%Tsimul=72
+%QTsimul=hour
+%simToD=0
+
+Initial BG Value
+BGinit not specified USE DEFAULT subject specific fasting
+BGinit=
+
+closed loop info - OPEN_LOOP
+%Tclosed=72
+%QTclosed=hour
+
+
+meals info_ 3 Meals 
+%Tmeals=[[7 12 19] 24+[7 12 19] 48+[7 12 19] 72+[7 12 19]]
+%QTmeals=hour
+%Ameals=[0.5 0.8 0.8 0.5 0.8 0.8 0.5 0.8 0.8 0.5 0.8 0.8]
+%Dmeals=[15]
+%Qmeals=perkg
+
+Open loop SQ insulin info
+%Qbasal=quest
+%OB=on
+
+
