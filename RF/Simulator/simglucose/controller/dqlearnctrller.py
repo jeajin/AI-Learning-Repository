@@ -20,17 +20,17 @@ PATIENT_PARA_FILE = pkg_resources.resource_filename(
 
 
 class DQLController(Controller):
-    def __init__(self, state_size, action_size):
+    def __init__(self, state_size, action_size,episode):
         self.state_size = state_size
         self.action_size = action_size
-
+        self.episode = episode
         self.quest = pd.read_csv(CONTROL_QUEST)
         self.patient_params = pd.read_csv(PATIENT_PARA_FILE)
 
         self.actions = 0
         self.learning_rate = 0.001
         self.discount_factor = 0.99
-        self.epsilon = 1.
+        self.epsilon = 0.1
         self.epsilon_min = 0.01
         self.batch_size = 64
         self.train_start = 1000
@@ -50,11 +50,11 @@ class DQLController(Controller):
 
     def build_model(self):
         model = Sequential()
-        model.add(Dense(24, input_dim=self.state_size, activation='relu',
+        model.add(Dense(256, input_dim=self.state_size, activation='relu',
                         kernel_initializer='he_uniform'))
-        model.add(Dense(24, activation='relu',
+        model.add(Dense(256, activation='relu',
                         kernel_initializer='he_uniform'))
-        model.add(Dense(self.action_size, activation='linear',
+        model.add(Dense(self.action_size, activation='softmax',
                         kernel_initializer='he_uniform'))
         model.summary()
         model.compile(loss='mse', optimizer=Adam(lr=self.learning_rate))
@@ -65,26 +65,25 @@ class DQLController(Controller):
 
     def policy(self, observation, reward, done, **kwargs):
         state = observation.CGM
-        print(state)
+        # print("state " + str(state))
         if np.random.rand() <= self.epsilon:
-            # 이곳이 문제다
-            print("ran")
-            print(random.randrange(self.action_size))
-            return Action(basal=random.randrange(self.action_size), bolus=0)
+            return Action(basal=random.random()/2, bolus=0)
         else:
-            q_value = self.model.predict(state)
-            np.argmax(q_value[0])
-            print("arg")
-            print(np.argmax(q_value[0]))
+            # 여기도 문제다
+            q_value = self.model.predict(kwargs.get('patient_state'))
+            ac = np.argmax(q_value[0])
+            if ac > 0:
+                print(q_value)
+                print("arg "+str(np.argmax(q_value[0])))
         return Action(basal=np.argmax(q_value[0]), bolus=0)
 
     def append_sample(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
 
     def train_model(self):
-        if self.epsilon > self.epsilon_min:
-            self.epsilon *= self.epsilon_decay
-
+        # if self.epsilon > self.epsilon_min:
+        #    self.epsilon *= self.epsilon_decay
+        print("train model")
         # 메모리에서 배치 크기만큼 무작위로 샘플 추출
         mini_batch = random.sample(self.memory, self.batch_size)
 

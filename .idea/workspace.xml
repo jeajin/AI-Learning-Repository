@@ -197,7 +197,7 @@
       <workItem from="1615392192626" duration="35000" />
       <workItem from="1616426418392" duration="1190000" />
       <workItem from="1616492543462" duration="7114000" />
-      <workItem from="1616507018973" duration="6602000" />
+      <workItem from="1616507018973" duration="7983000" />
     </task>
     <servers />
   </component>
@@ -229,7 +229,7 @@
     <SUITE FILE_PATH="coverage/Machine_Learning$asd.coverage" NAME="asd Coverage Results" MODIFIED="1615293214157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Deep_Learning/Deep_learning_ from_ Scratch" />
     <SUITE FILE_PATH="coverage/Machine_Learning$sarsa_agent.coverage" NAME="sarsa_agent Coverage Results" MODIFIED="1613978872101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/4-sarsa" />
     <SUITE FILE_PATH="coverage/Machine_Learning$run_pid_controller.coverage" NAME="run_pid_controller Coverage Results" MODIFIED="1613973839519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulator/examples" />
-    <SUITE FILE_PATH="coverage/Machine_Learning$cartpole_dqn.coverage" NAME="cartpole_dqn Coverage Results" MODIFIED="1616513770868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn" />
+    <SUITE FILE_PATH="coverage/Machine_Learning$cartpole_dqn.coverage" NAME="cartpole_dqn Coverage Results" MODIFIED="1616575221303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/2-cartpole/1-dqn" />
     <SUITE FILE_PATH="coverage/Machine_Learning$topology.coverage" NAME="topology Coverage Results" MODIFIED="1612104108981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda3/envs/3.6ML/Lib/site-packages/keras/engine" />
     <SUITE FILE_PATH="coverage/Machine_Learning$Unittests_for_test_pid_controller_TestPIDController_test_pid_controller.coverage" NAME="Unittests for test_pid_controller.TestPIDController.test_pid_controller Coverage Results" MODIFIED="1612787526139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/simglucose/tests" />
     <SUITE FILE_PATH="coverage/Machine_Learning$reinforce_agent.coverage" NAME="reinforce_agent Coverage Results" MODIFIED="1613972032362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Reinforcement_Learning/reinforcement-learning-kr/1-grid-world/7-reinforce" />
