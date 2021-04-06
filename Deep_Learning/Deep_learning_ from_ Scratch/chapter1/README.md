@@ -2,7 +2,7 @@
 
 !! 딥러닝 시작 전에 알아야 할 python 기초
 
-!! [The Python Standard Library](https://docs.python.org/3.5/library/index.html) python 기본구성과 numpy는 필수
+!! [The Python Standard Library](https://docs.python.org/3.5/library/index.html) python basic, numpy는 필수
 
 ##  target
 - python Interpreter
