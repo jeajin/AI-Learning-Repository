@@ -49,7 +49,10 @@ class DeepSARSAgent:
         else:
             # 모델로부터 행동 산출
             state = np.float32(state)
+
             q_values = self.model.predict(state)
+            print(state)
+            print(q_values)
             return np.argmax(q_values[0])
 
     def train_model(self, state, action, reward, next_state, next_action, done):

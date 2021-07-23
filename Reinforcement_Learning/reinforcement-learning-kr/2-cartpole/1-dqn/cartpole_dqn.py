@@ -28,10 +28,10 @@ class DQNAgent:
         self.epsilon_decay = 0.999
         self.epsilon_min = 0.01
         self.batch_size = 64
-        self.train_start = 1000
+        self.train_start = 300
 
         # 리플레이 메모리, 최대 크기 2000
-        self.memory = deque(maxlen=2000)
+        self.memory = deque(maxlen=1024)
 
         # 모델과 타깃 모델 생성
         self.model = self.build_model()
@@ -65,17 +65,20 @@ class DQNAgent:
         if np.random.rand() <= self.epsilon:
             return random.randrange(self.action_size)
         else:
+            # print(state)
             q_value = self.model.predict(state)
             return np.argmax(q_value[0])
 
     # 샘플 <s, a, r, s'>을 리플레이 메모리에 저장
     def append_sample(self, state, action, reward, next_state, done):
+        # print("action", action)
         self.memory.append((state, action, reward, next_state, done))
 
     # 리플레이 메모리에서 무작위로 추출한 배치로 모델 학습
     def train_model(self):
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
+            print("self.epsilon", self.epsilon)
 
         # 메모리에서 배치 크기만큼 무작위로 샘플 추출
         mini_batch = random.sample(self.memory, self.batch_size)
@@ -84,6 +87,7 @@ class DQNAgent:
         next_states = np.zeros((self.batch_size, self.state_size))
         actions, rewards, dones = [], [], []
 
+        # agent.append_sample(state, action, reward, next_state, done)
         for i in range(self.batch_size):
             states[i] = mini_batch[i][0]
             actions.append(mini_batch[i][1])
@@ -93,6 +97,7 @@ class DQNAgent:
 
         # 현재 상태에 대한 모델의 큐함수
         # 다음 상태에 대한 타깃 모델의 큐함수
+        # print("answer ", states[0])
         target = self.model.predict(states)
         target_val = self.target_model.predict(next_states)
 
@@ -101,8 +106,7 @@ class DQNAgent:
             if dones[i]:
                 target[i][actions[i]] = rewards[i]
             else:
-                target[i][actions[i]] = rewards[i] + self.discount_factor * (
-                    np.amax(target_val[i]))
+                target[i][actions[i]] = rewards[i] + self.discount_factor * (np.amax(target_val[i]))
 
         self.model.fit(states, target, batch_size=self.batch_size,
                        epochs=1, verbose=0)
@@ -112,10 +116,10 @@ if __name__ == "__main__":
     # CartPole-v1 환경, 최대 타임스텝 수가 500
     env = gym.make('CartPole-v1')
     state_size = env.observation_space.shape[0]
-    print(state_size)
+    print("state_size ",state_size)
 
     action_size = env.action_space.n
-    print(action_size)
+    print("action_size ",action_size)
 
     # DQN 에이전트 생성
     agent = DQNAgent(state_size, action_size)
@@ -128,11 +132,10 @@ if __name__ == "__main__":
         # env 초기화
         state = env.reset()
         state = np.reshape(state, [1, state_size])
-
         while not done:
             if agent.render:
                 env.render()
-            print(state)
+            # print(state)
             # 현재 상태로 행동을 선택
             action = agent.get_action(state)
             # 선택한 행동으로 환경에서 한 타임스텝 진행
@@ -143,6 +146,7 @@ if __name__ == "__main__":
             reward = reward if not done or score == 499 else -100
 
             # 리플레이 메모리에 샘플 <s, a, r, s'> 저장
+            #print(state)
             agent.append_sample(state, action, reward, next_state, done)
             # 매 타임스텝마다 학습
             if len(agent.memory) >= agent.train_start:
@@ -161,8 +165,7 @@ if __name__ == "__main__":
                 episodes.append(e)
                 pylab.plot(episodes, scores, 'b')
                 pylab.savefig("./save_graph/cartpole_dqn.png")
-                print("episode:", e, "  score:", score, "  memory length:",
-                      len(agent.memory), "  epsilon:", agent.epsilon)
+                # print("episode:", e, "  score:", score, "  memory length:", len(agent.memory), "  epsilon:", agent.epsilon)
 
                 # 이전 10개 에피소드의 점수 평균이 490보다 크면 학습 중단
                 if np.mean(scores[-min(10, len(scores)):]) > 490:

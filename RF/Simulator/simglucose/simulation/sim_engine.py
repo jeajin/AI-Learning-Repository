@@ -1,6 +1,7 @@
 import logging
 import time
 import os
+import numpy as np
 
 pathos = True
 try:
@@ -27,19 +28,28 @@ class SimObj(object):
         self.path = path
 
     def simulate(self):
+        # 초기화
         obs, reward, done, info = self.env.reset()
         tic = time.time()
-        while self.env.time < self.env.scenario.start_time + self.sim_time:
+        i = 0
+        # 추출 시작, action(Insulin)을 제공하면 state(Blood Glucose)가 반환
+        while self.env.time < self.env.scenario.start_time + self.sim_time and not done:
+            i = i+1
+            if i % 12 == 0:
+
+                state = obs.CGM
+                # print(i/12)
+                # print(info)
+                # print(reward)
+                if state < 50:
+                    done = True
+
             if self.animate:
                 self.env.render()
 
-            # get_action
+            # 컨트롤러에 따른 Action Pick
             action = self.controller.policy(obs, reward, done, **info)
-            print(info.get('patient_state'))
-            print(obs.CGM)
-            print(action)
-            print()
-            # step
+            # Action 에 따른 환경으로 부터 BG 등을 반환
             obs, reward, done, info = self.env.step(action)
         toc = time.time()
         logger.info('Simulation took {} seconds.'.format(toc - tic))
@@ -61,48 +71,113 @@ class SimObj(object):
         toc = time.time()
         logger.info('Simulation took {} seconds.'.format(toc - tic))
 
-    def dqsimulate(self):
-        epi = self.controller.episode
-        totaltic = time.time()
-        for episode in range(epi):
-            print('episode {} is start'.format(episode))
-            if episode % 1 == 0:
-                # self.controller.epsilon -= 0.1
-                print(self.controller.epsilon)
-                # print("episode is "+str(episode))
 
-            obs, reward, done, info = self.env.reset()
+        # def dqsimulate(self):
+        #     # episode size
+        #     epi = self.controller.episode
+        #     scores, episodes = [], []
+        #     for episode in range(epi):
+        #         score = 0
+        #         # env,controller 초기화
+        #         obs, reward, done, info = self.env.reset()
+        #         self.controller.reset(obs, reward, done, info)
+        #         state = np.reshape(obs.CGM, [1, self.controller.state_size])
+        #         # episode start
+        #
+        #         while self.env.time < self.env.scenario.start_time + self.sim_time and not done:
+        #             # get_action
+        #             action = self.controller.policy(np.reshape(state, [1, self.controller.state_size]))
+        #             # step
+        #             next_obs, reward, done, info = self.env.step(action)
+        #             next_state = np.reshape(next_obs.CGM, [1, self.controller.state_size])
+        #             # 리플레이 메모리에 샘플 <s, a, r, s'> 저장
+        #             self.controller.append_sample(state, action, reward, next_state, done)
+        #             # 매 타임스텝마다 학습
+        #             if len(self.controller.memory) >= self.controller.train_start:
+        #                 self.controller.train_model()
+        #             state = next_state
+        #
+        #             # 특정 혈압 시 보상감점과 episode 종료
+        #             if state < 70:
+        #                 score -= 5
+        #                 done = True
+        #             elif state > 250:
+        #                 score -= 3
+        #                 done = True
+        #
+        #             if done:
+        #                 # 각 에피소드마다 타깃 모델을 모델의 가중치로 업데이트
+        #                 self.controller.update_target_model()
+
+
+    def dqsimulate(self):
+        ttic = time.time()
+        epi = self.controller.episode
+        scores, episodes = [], []
+        print("de")
+        for episode in range(epi):
             tic = time.time()
-            while self.env.time < self.env.scenario.start_time + self.sim_time:
+            done = False
+            score = 0
+            print('episode {} is start'.format(episode))
+            obs, reward, done, info = self.env.reset()
+            self.controller.reset(obs, reward, done, info)
+
+            # state = np.reshape(obs.CGM, [1, self.controller.state_size])
+            state = obs.CGM
+            t = 0
+            for pre in range(self.controller.previous_time):
+                action = self.controller.prepolicy(np.reshape(state, [1, self.controller.state_size]))
+                next_obs, reward, done, info = self.env.step(action)
+                self.controller.mini_append_sample(obs.CGM, action.basal, reward, next_obs.CGM, done)
+                obs = next_obs
+
+            while self.env.time < self.env.scenario.start_time + self.sim_time and not done:
                 if self.animate:
                     self.env.render()
+
                 # get_action
-                action = self.controller.policy(obs, reward, done, **info)
+                action = self.controller.policy(np.reshape(state, [1, self.controller.state_size]))
                 # print(action)
                 # step
-                n_obs, reward, done, info = self.env.step(action)
-
-                # next_state = np.reshape(next_state, [1, state_size])
-                # 에피소드가 중간에 끝나면 -100 보상
-                # ??????reward = reward if not done or score == 499 else -100
+                next_obs, reward, done, info = self.env.step(action)
+                next_state = np.reshape(next_obs.CGM, [1, self.controller.state_size])
 
                 # 리플레이 메모리에 샘플 <s, a, r, s'> 저장
-                self.controller.append_sample(obs.CGM, action, reward, n_obs.CGM, done)
+                self.controller.append_sample(obs.CGM, action.basal, reward, next_obs.CGM, done)
+
                 # 매 타임스텝마다 학습
                 if len(self.controller.memory) >= self.controller.train_start:
                     self.controller.train_model()
-                    print("time")
-                obs = n_obs
-                if obs.CGM < 50:
+
+                score += reward
+                state = next_state
+                obs = next_obs
+                t += 1
+
+                if state < 40:
                     print("Hypoglycemia")
-                    break
-                elif obs.CGM > 250:
+                    score -= 5
+                    done = True
+                elif state > 400:
                     print("Hyperglycemia")
-                    break
-            toc = time.time()
-            print('Simulation took episode {} seconds.'.format(toc - tic))
-        totaltoc = time.time()
-        print('Simulation took total {} seconds.'.format(totaltoc - totaltic))
+                    score -= 3
+                    done = True
+
+                if done:
+                    # 각 에피소드마다 타깃 모델을 모델의 가중치로 업데이트
+                    self.controller.update_target_model()
+                    # 에피소드마다 학습 결과 출력
+                    scores.append(score)
+                    episodes.append(episode)
+                    toc = time.time()
+                    print('Simulation took episode {} seconds.'.format(toc - tic))
+
+            print("time: ", t, "  insulin:", action, "  episode:", episode, "  score:", score, "memory length:", len(self.controller.memory), "  epsilon:", self.controller.epsilon, " BG:", state)
+
+            print()
+            ttoc = time.time()
+        print('Simulation took total {} seconds.'.format(ttoc - ttic))
 
     def results(self):
         return self.env.show_history()
@@ -122,7 +197,8 @@ class SimObj(object):
 def sim(sim_object):
     print("Process ID: {}".format(os.getpid()))
     print('Simulation starts ...')
-    sim_object.simulate()
+    # sim_object.simulate()
+    sim_object.dqsimulate()
     sim_object.save_results()
     print('Simulation Completed!')
     return sim_object.results()

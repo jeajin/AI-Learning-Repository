@@ -1,14 +1,14 @@
 # Chapter 1 Hello python
 
-!! 딥러닝 시작 전에 알아야 할 python 기초
+ 딥러닝 시작 전에 알아야 할 python 기초
 
-!! [The Python Standard Library](https://docs.python.org/3.5/library/index.html) python basic, numpy는 필수
+## !! [The Python Standard Library](https://docs.python.org/3.5/library/index.html) : python basic, numpy는 필수 (나머지는 언젠가는...)
 
 ##  target
-- python Interpreter
-- python Scripter
-- numpy
-- matplotlib
+- ### python Interpreter
+- ### python Scripter
+- ### numpy
+- ### matplotlib
 
 <br/>
 <br/>
