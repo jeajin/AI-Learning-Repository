@@ -110,11 +110,80 @@ class SimObj(object):
         #                 self.controller.update_target_model()
 
 
+    # def dqsimulate(self):
+    #     ttic = time.time()
+    #     epi = self.controller.episode
+    #     scores, episodes = [], []
+    #     print("de")
+    #     for episode in range(epi):
+    #         self.controller.onetimetest = 1
+    #         tic = time.time()
+    #         done = False
+    #         score = 0
+    #         print('episode {} is start'.format(episode))
+    #         obs, reward, done, info = self.env.reset()
+    #         self.controller.reset(obs, reward, done, info)
+    #
+    #         # state = np.reshape(obs.CGM, [1, self.controller.state_size])
+    #         state = obs.CGM
+    #         t = 0
+    #         for pre in range(self.controller.previous_time):
+    #             action = self.controller.prepolicy()
+    #             next_obs, reward, done, info = self.env.step(action)
+    #             self.controller.BG_append_sample(obs.CGM)
+    #             obs = next_obs
+    #
+    #         while self.env.time < self.env.scenario.start_time + self.sim_time and not done:
+    #             if self.animate:
+    #                 self.env.render()
+    #
+    #             # get_action
+    #             action = self.controller.policy(np.reshape(state, [1, self.controller.state_size]))
+    #
+    #             # step
+    #             next_obs, reward, done, info = self.env.step(self.controller.get_basal(action))
+    #             next_state = np.reshape(next_obs.CGM, [1, self.controller.state_size])
+    #
+    #             # 리플레이 메모리에 샘플 <s, a, r, s'> 저장
+    #             self.controller.append_sample(obs.CGM, action, reward, next_obs.CGM, done)
+    #
+    #             # 매 타임스텝마다 학습
+    #             if len(self.controller.memory) >= self.controller.train_start:
+    #                 self.controller.train_model()
+    #
+    #             score += reward
+    #             state = next_state
+    #             obs = next_obs
+    #             t += 1
+    #
+    #             if state < 40:
+    #                 print("Hypoglycemia")
+    #                 # score -= 5
+    #                 done = True
+    #             elif state > 400:
+    #                 print("Hyperglycemia")
+    #                 # score -= 3
+    #                 done = True
+    #
+    #             if done:
+    #                 # 각 에피소드마다 타깃 모델을 모델의 가중치로 업데이트
+    #                 self.controller.update_target_model()
+    #                 # 에피소드마다 학습 결과 출력
+    #                 # scores.append(score)
+    #                 # episodes.append(episode)
+    #                 toc = time.time()
+    #                 print('Simulation took episode {} seconds.'.format(toc - tic))
+    #
+    #         print("time: ", t, "  insulin:", action, "  episode:", episode, "  score:", score, "memory length:", len(self.controller.memory), "  epsilon:", self.controller.epsilon, " BG:", state)
+    #
+    #         print()
+    #         ttoc = time.time()
+    #     print('Simulation took total {} seconds.'.format(ttoc - ttic))
     def dqsimulate(self):
         ttic = time.time()
+        print("start")
         epi = self.controller.episode
-        scores, episodes = [], []
-        print("de")
+        # scores, episodes = [], []
         for episode in range(epi):
             self.controller.onetimetest = 1
             tic = time.time()
@@ -127,33 +196,36 @@ class SimObj(object):
             # state = np.reshape(obs.CGM, [1, self.controller.state_size])
             state = obs.CGM
             t = 0
+            action = 0
             for pre in range(self.controller.previous_time):
-                action = self.controller.prepolicy()
-                next_obs, reward, done, info = self.env.step(action)
-                self.controller.BG_append_sample(obs.CGM)
+                next_action = self.controller.prepolicy()
+                next_obs, reward, done, info = self.env.step(self.controller.get_basal(action))
+                self.controller.bg_insulin_append_sample(obs.CGM, action)
                 obs = next_obs
+                action = next_action
 
             while self.env.time < self.env.scenario.start_time + self.sim_time and not done:
                 if self.animate:
                     self.env.render()
 
                 # get_action
-                action = self.controller.policy(np.reshape(state, [1, self.controller.state_size]))
+                next_action = self.controller.policy(np.reshape(state, [1, self.controller.state_size]))
 
                 # step
                 next_obs, reward, done, info = self.env.step(self.controller.get_basal(action))
                 next_state = np.reshape(next_obs.CGM, [1, self.controller.state_size])
-
+                # print("reward", reward)
                 # 리플레이 메모리에 샘플 <s, a, r, s'> 저장
-                self.controller.append_sample(obs.CGM, action, reward, next_obs.CGM, done)
+                self.controller.append_sample(obs.CGM, action, reward, next_obs.CGM, next_action, done)
 
                 # 매 타임스텝마다 학습
                 if len(self.controller.memory) >= self.controller.train_start:
                     self.controller.train_model()
 
-                score += reward
+                # score += reward
                 state = next_state
                 obs = next_obs
+                action = next_action
                 t += 1
 
                 if state < 40:
@@ -172,9 +244,11 @@ class SimObj(object):
                     # scores.append(score)
                     # episodes.append(episode)
                     toc = time.time()
+                    self.controller.model.save_weights("teest.h5")
                     print('Simulation took episode {} seconds.'.format(toc - tic))
 
-            print("time: ", t, "  insulin:", action, "  episode:", episode, "  score:", score, "memory length:", len(self.controller.memory), "  epsilon:", self.controller.epsilon, " BG:", state)
+            print("time: ", t, "  insulin:", action, "  episode:", episode, "  score:", score, "memory length:",
+                  len(self.controller.memory), " BG:", state)
 
             print()
             ttoc = time.time()

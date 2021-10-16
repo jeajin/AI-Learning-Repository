@@ -6,8 +6,8 @@ from PIL import ImageTk, Image
 np.random.seed(1)
 PhotoImage = ImageTk.PhotoImage
 UNIT = 100  # 필셀 수
-HEIGHT = 5  # 그리드 월드 가로
-WIDTH = 5  # 그리드 월드 세로
+HEIGHT = 3  # 그리드 월드 가로
+WIDTH = 3  # 그리드 월드 세로
 
 
 class Env(tk.Tk):
@@ -35,9 +35,13 @@ class Env(tk.Tk):
 
         # 캔버스에 이미지 추가
         self.rectangle = canvas.create_image(50, 50, image=self.shapes[0])
-        self.triangle1 = canvas.create_image(250, 150, image=self.shapes[1])
-        self.triangle2 = canvas.create_image(150, 250, image=self.shapes[1])
-        self.circle = canvas.create_image(250, 250, image=self.shapes[2])
+        self.triangle1 = canvas.create_image(150, 50, image=self.shapes[1])
+        self.triangle2 = canvas.create_image(150, 50, image=self.shapes[1])
+        self.circle = canvas.create_image(250, 50, image=self.shapes[2])
+        # self.rectangle = canvas.create_image(50, 50, image=self.shapes[0])
+        # self.triangle1 = canvas.create_image(250, 150, image=self.shapes[1])
+        # self.triangle2 = canvas.create_image(150, 250, image=self.shapes[1])
+        # self.circle = canvas.create_image(250, 250, image=self.shapes[2])
 
         canvas.pack()
 
@@ -92,6 +96,7 @@ class Env(tk.Tk):
         time.sleep(0.5)
         x, y = self.canvas.coords(self.rectangle)
         self.canvas.move(self.rectangle, UNIT / 2 - x, UNIT / 2 - y)
+        # self.canvas.move(self.rectangle, UNIT / 2 - x, UNIT / 2 - y)
         self.render()
         return self.coords_to_state(self.canvas.coords(self.rectangle))
 

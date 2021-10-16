@@ -26,6 +26,7 @@ class PIDController(Controller):
         # print(bg - self.target)
         # print(bg-self.prev_state)
         # print()
+        print(" bg - self.target", bg - self.target, "self.I * self.integrated_state",  self.I * self.integrated_state, "self.D * (bg - self.prev_state)", self.D * (bg - self.prev_state))
 
         logger.info('Control input: {}'.format(control_input))
 

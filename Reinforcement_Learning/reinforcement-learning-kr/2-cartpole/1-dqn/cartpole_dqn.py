@@ -78,7 +78,7 @@ class DQNAgent:
     def train_model(self):
         if self.epsilon > self.epsilon_min:
             self.epsilon *= self.epsilon_decay
-            print("self.epsilon", self.epsilon)
+            # print("self.epsilon", self.epsilon)
 
         # 메모리에서 배치 크기만큼 무작위로 샘플 추출
         mini_batch = random.sample(self.memory, self.batch_size)
@@ -107,19 +107,22 @@ class DQNAgent:
                 target[i][actions[i]] = rewards[i]
             else:
                 target[i][actions[i]] = rewards[i] + self.discount_factor * (np.amax(target_val[i]))
-
         self.model.fit(states, target, batch_size=self.batch_size,
                        epochs=1, verbose=0)
+        print("target", target[0], "actions", actions)
+        print("states : ", states[0])
+        print("next_states : ", next_states[0])
+        print()
 
 
 if __name__ == "__main__":
     # CartPole-v1 환경, 최대 타임스텝 수가 500
     env = gym.make('CartPole-v1')
     state_size = env.observation_space.shape[0]
-    print("state_size ",state_size)
+    print("state_size ", state_size)
 
     action_size = env.action_space.n
-    print("action_size ",action_size)
+    print("action_size ", action_size)
 
     # DQN 에이전트 생성
     agent = DQNAgent(state_size, action_size)

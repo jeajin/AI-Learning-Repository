@@ -90,7 +90,7 @@ class A3CAgent:
         actor.summary()
         critic.summary()
 
-        return actor, critic
+        return actor, criticz
 
     # 정책신경망을 업데이트하는 함수
     def actor_optimizer(self):

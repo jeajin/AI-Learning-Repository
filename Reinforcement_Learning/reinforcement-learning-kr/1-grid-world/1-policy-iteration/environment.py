@@ -185,7 +185,7 @@ class GraphicDisplay(tk.Tk):
                 self.text_value(i, j, value_table[i][j])
 
     def render(self):
-        time.sleep(0.1)
+        time.sleep(0.01)
         self.canvas.tag_raise(self.rectangle)
         self.update()
 

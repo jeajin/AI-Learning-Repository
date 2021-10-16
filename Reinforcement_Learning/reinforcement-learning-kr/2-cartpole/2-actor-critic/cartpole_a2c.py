@@ -2,10 +2,10 @@ import sys
 import gym
 import pylab
 import numpy as np
-from keras.layers import Dense
-from keras.models import Sequential
-from keras.optimizers import Adam
-from keras import backend as K
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras import backend as K
 
 EPISODES = 1000
 
@@ -13,7 +13,7 @@ EPISODES = 1000
 # 카트폴 예제에서의 액터-크리틱(A2C) 에이전트
 class A2CAgent:
     def __init__(self, state_size, action_size):
-        self.render =True
+        self.render = True
         self.load_model = False
         # 상태와 행동의 크기 정의
         self.state_size = state_size

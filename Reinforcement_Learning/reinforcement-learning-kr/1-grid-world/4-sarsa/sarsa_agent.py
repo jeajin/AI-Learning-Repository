@@ -9,7 +9,7 @@ class SARSAgent:
         self.actions = actions
         self.learning_rate = 0.01
         self.discount_factor = 0.9
-        self.epsilon = 0.1
+        self.epsilon = 0.375
         self.q_table = defaultdict(lambda: [0.0, 0.0, 0.0, 0.0])
 
     # <s, a, r, s', a'>의 샘플로부터 큐함수를 업데이트
@@ -28,6 +28,7 @@ class SARSAgent:
         else:
             # 큐함수에 따른 행동 반환
             state_action = self.q_table[state]
+            print(state_action)
             action = self.arg_max(state_action)
         return action
 
